@@ -17,15 +17,17 @@ public class Pet {
 	private String other_pets;
 	private String idadoption;
 	private String image;
+	private String discript;
 	
-	public Pet( String idpet, String name, String kind, int age, String size, String sex, String health_card, String health_probs, String sterilisation, String microchipid, String contract, String kids, String other_pets, String image, String idadoption) {
+	public Pet( String idpet, String name, String kind, int age, String size, String sex, String discript, String health_card, String health_probs, String sterilisation, String microchipid, String contract, String kids, String other_pets, String image, String idadoption) {
 		
 		this.idpet = idpet;
 		this.name = name;
 		this.kind = kind;
 		this.age = age;
 		this.size = size;
-        this.sex = sex;
+		this.sex = sex;
+		this.discript = discript;
         this.health_card = health_card;
 		this.health_probs = health_probs;
 		this.sterilisation = sterilisation;
@@ -83,6 +85,14 @@ public class Pet {
 
 	public void setSex(String sex) {
 		this.sex = sex;
+	}
+
+	public String getDiscript() {
+		return discript;
+	}
+
+	public void setDiscript(String discript) {
+		this.discript = discript;
 	}
 
 	public String getHealth_card() {

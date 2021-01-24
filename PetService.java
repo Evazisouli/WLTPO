@@ -26,7 +26,7 @@ public class PetService {
 			}
 
             Pet pet = new Pet(rs.getString("idpet"), rs.getString("name"), rs.getString("kind"), rs.getInt("age"), rs.getString("size"), 
-                rs.getString("sex"), rs.getString("health_card"), rs.getString("health_probs"), 
+                rs.getString("sex"), rs.getString("discript"), rs.getString("health_card"), rs.getString("health_probs"), 
                 rs.getString("sterilisation"), rs.getString("microchipid"), rs.getString("contract"), 
                 rs.getString("kids"), rs.getString("other_pets"), rs.getString("image"), rs.getString("adoption_idadoption"));
 			rs.close();
@@ -62,7 +62,7 @@ public class PetService {
 			while(rs.next()) {
 
 				pets.add(new Pet(rs.getString("idpet"), rs.getString("name"), rs.getString("kind"), rs.getInt("age"), rs.getString("size"), 
-                rs.getString("sex"), rs.getString("health_card"), rs.getString("health_probs"), 
+                rs.getString("sex"), rs.getString("discript"), rs.getString("health_card"), rs.getString("health_probs"), 
                 rs.getString("sterilisation"), rs.getString("microchipid"), rs.getString("contract"), 
                 rs.getString("kids"), rs.getString("other_pets"), rs.getString("image"), rs.getString("adoption_idadoption")));
 			}
