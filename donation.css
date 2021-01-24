@@ -129,3 +129,23 @@
      ;
      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
  }
+ 
+ @media screen and (max-width: 576px) {
+     #imagecont {
+         position: relative;
+         width: 80%;
+     }
+     .large-font {
+         font-size: 26px;
+     }
+     .container-fluid p {
+         font-size: 16px;
+         color: #ff5405;
+     }
+     .media-body p {
+         color: #212529;
+     }
+     .media-body h1 {
+         font-size: 26px;
+     }
+ }
