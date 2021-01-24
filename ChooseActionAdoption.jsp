@@ -153,7 +153,9 @@
                                                     <p class="title">
                                                         <%=zwo.getSex() %>
                                                     </p>
-                                                    <p style="color: black;"> Πολύ φιλικός και παιχνιδιάρης, ιδανικός για περιβάλλον με παιδιά.</p>
+                                                    <p style="color: black;">
+                                                        <%=zwo.getDiscript() %>
+                                                    </p>
                                                     <p style="color: black;">
                                                         <%=zwo.getAge() %> χρονών</p>
 

@@ -37,10 +37,10 @@ public class Shelter {
 		this.twitter = twitter;
 		this.insta = insta;
 	}
-	public String getIdshelter() {
+	public String getUsername() {
 		return idshelter;
 	}
-	public void setIdshelter(String idshelter) {
+	public void setUsername(String idshelter) {
 		this.idshelter = idshelter;
 	}
 	public String getName() {
