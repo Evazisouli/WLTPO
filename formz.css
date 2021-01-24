@@ -1,0 +1,85 @@
+* {
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+  }
+
+
+  body {
+    background:url(../images/formz.jpg); background-size:120%; background-repeat: no-repeat;
+  }
+ 
+  input[type=text], input[type=password], input[type="name"], input[type="email"], input[type="number"], input[type="username"], input[type="address"] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    box-sizing: border-box;
+  }
+
+  .form-group {
+    text-align: center;
+    font-size:12px;
+  }
+  
+  .checkbox {
+    padding-left: 20%;
+  }
+  
+  .lol {
+    padding-left: 42%;
+  }
+  
+  .bt {
+    padding-left: 42%;
+  }
+  
+  .submit {
+    border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #ff5405;
+  text-align: center;
+  display: inline-block;
+  margin: 50px 680px;
+  cursor: pointer;
+  border-radius: 8px;
+  }
+
+
+  .submit:hover {
+    color:white;
+    background-color: orangered;
+    text-decoration:none;
+  }
+  
+
+  span.psw {
+    float: center;
+    padding-top: 16px;
+    padding-right: 16px;
+  }
+  
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width:1024px) {
+    .nav-links {
+      width: 150%;
+      display: flex;
+      justify-content: space-around;
+    }
+    body {
+      background:url(../images/formz.jpg);
+    }
+    
+  }

@@ -1,0 +1,166 @@
+<%@ page language="java" contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>Eγγραφή</title>
+
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
+    <link href="css/homepage.css" rel="stylesheet">
+</head>
+
+<style>
+    * {
+        box-sizing: border-box
+    }
+
+    @media (min-width:1200px) {
+        .container {
+            width: 100%;
+        }
+    }
+
+    @media (min-width:992px) {
+        .container {
+            width: 100%;
+        }
+    }
+
+    @media (min-width:768px) {
+        .container {
+            width: 100%;
+        }
+    }
+
+    .row {
+        padding-top: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .column {
+        float: left;
+        width: 25%;
+        margin-bottom: 16px;
+        padding-left: 8px;
+        padding-right: 4px;
+    }
+
+    .card {
+        box-shadow: 0 4px 8px 0 orange;
+        height:600px;
+    }
+
+    .container {
+        padding: 16px 16px;
+    }
+
+    .container::after,
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .title {
+        color: white;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+</style>
+
+<body>
+
+    <%@ include file="navigationmenu.jsp" %>
+              
+              
+    <div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w780">
+            <div class="card card-3">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    
+                    <h2 class="title" color=white>Εγγραφή ως Φιλόζωος</h2>
+        
+                    <form method="POST">
+                        <div class="input-group">
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="gender">
+                                    <option disabled="disabled" selected="selected">Φύλο</option>
+                                    <option>Άνδρας</option>
+                                    <option>Γυναίκα</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Όνοματεπωνυμο" name="name">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="password" placeholder="Κωδικός" name="password">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="password" placeholder="Επαλήθευση κωδικού" name="confirm">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="email" placeholder="Διευθύνση email" name="mail">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Τηλέφωνο" name="phone">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Πόλη" name="city">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Περιοχή" name="area">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Bio" name="description">
+                        </div>
+                        <div class="p-t-10">
+                            <button class="btn btn--pill btn--green" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
+<!-- end document-->
