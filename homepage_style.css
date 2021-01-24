@@ -1,340 +1,340 @@
 * {
-            box-sizing: border-box
-        }
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.containers {
+    padding: 20px;
+}
+
+.contain {
+    padding: 20px;
+}
+
+.rows:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.rows2:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.col {
+    float: left;
+    width: 66.66666%;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.colum {
+    float: right;
+    width: 33.33333%;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.photo {
+    float: right;
+    width: 33.33333%;
+    padding: 20px;
+}
+
+.image {
+    float: right;
+    width: 33.33333%;
+    padding: 20px;
+}
+
+.image2 {
+    float: right;
+    width: 33.33333%;
+    padding: 20px;
+}
+
+.container {
+    padding-bottom: 40px;
+}
+
+.col p {
+    color: white;
+    font-size: 20px;
+}
+
+.colum p {
+    color: #ff5405;
+    font-size: 20px;
+}
+
+.column-66 {
+    float: none;
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 0px;
+}
+
+.column-66 p {
+    color: #ff5405;
+    font-size: 20px;
+}
+
+.large-font {
+    font-size: 36px;
+}
+
+.btn {
+    border: none;
+    color: #ff5405;
+    padding: 14px 28px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: white;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.btn:hover {
+    background-color: orangered;
+    color: white;
+}
+
+.btns {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #ff5405;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.btns:hover {
+    background-color: orangered;
+    color: white;
+    text-decoration: none;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #ff5405;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.button:hover {
+    background-color: orangered;
+    color: white;
+    text-decoration: none;
+}
+
+.row {
+    display: -ms-flexbox;
+    /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
 
 
+/* Create four equal columns that sits next to each other */
 
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-        }
+.column {
+    -ms-flex: 25%;
+    /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
 
-        .containers {
-            padding: 20px;
-        }
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
 
-        .contain {
-            padding: 20px;
-        }
 
-        .rows:after {
-            content: "";
-            display: table;
-            clear: both
-        }
+/* Responsive layout - makes a two column-layout instead of four columns */
 
-        .rows2:after {
-            content: "";
-            display: table;
-            clear: both
-        }
-        .col {
-            float: left;
-            width: 66.66666%;
-            padding-top: 40px;
-            padding-left:20px;
-            padding-right:20px;
-            padding-bottom:20px;
-        }
-
-        .colum {
-            float: right;
-            width: 33.33333%;
-            padding-top: 40px;
-            padding-left:20px;
-            padding-right:20px;
-            padding-bottom:20px;
-        }
-        .photo {
-            float: right;
-            width: 33.33333%;
-            padding: 20px;
-        }
-
-        .image {
-            float: right;
-            width: 33.33333%;
-            padding: 20px;
-        }
-        .image2 {
-            float: right;
-            width: 33.33333%;
-            padding: 20px;
-        }
-        .container {
-            padding-bottom: 40px;
-        }
-
-        .col p {
-            color:white;
-            font-size: 20px;
-        }
-
-        .colum p {
-            color:#ff5405;
-            font-size: 20px;
-        }
-        .column-66 {
-            float: none;
-            width: 100%;
-            padding-left: 20px;
-            padding-top: 0px;
-        }
-
-        .column-66 p {
-            color:#ff5405;
-            font-size: 20px;
-        }
-
-        .large-font {
-            font-size: 36px;
-        }
-
-        .btn {
-            border: none;
-            color: #ff5405;
-            padding: 14px 28px;
-            font-size: 20px;
-            cursor: pointer;
-            background-color: white;
-            text-align: center;
-            display: inline-block;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 16px;
-        }
-
-        .btn:hover {
-            background-color: orangered;
-            color:white;
-        }
-        .btns {
-            border: none;
-            color: white;
-            padding: 14px 28px;
-            font-size: 20px;
-            cursor: pointer;
-            background-color: #ff5405;
-            text-align: center;
-            display: inline-block;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 16px;
-        }
-
-        .btns:hover {
-            background-color: orangered;
-            color: white;
-            text-decoration:none;
-        }
-        .button {
-            border: none;
-            color: white;
-            padding: 14px 28px;
-            font-size: 20px;
-            cursor: pointer;
-            background-color: #ff5405;
-            text-align: center;
-            display: inline-block;
-            cursor: pointer;
-            border-radius: 16px;
-        }
-
-        .button:hover {
-            background-color: orangered;
-            color: white;
-            text-decoration:none;
-        }
-
-        .row {
-            display: -ms-flexbox;
-            /* IE10 */
-            display: flex;
-            -ms-flex-wrap: wrap;
-            /* IE10 */
-            flex-wrap: wrap;
-            padding: 0 4px;
-        }
-
-        /* Create four equal columns that sits next to each other */
-        .column {
-            -ms-flex: 25%;
-            /* IE10 */
-            flex: 25%;
-            max-width: 25%;
-            padding: 0 4px;
-        }
-
-        .column img {
-            margin-top: 8px;
-            vertical-align: middle;
-            width: 100%;
-        }
-
-        /* Responsive layout - makes a two column-layout instead of four columns */
-        @media screen and (max-width: 800px) {
-            .column {
-                -ms-flex: 50%;
-                flex: 50%;
-                max-width: 50%;
-            }
-            .column-66 {
-                width: 100%;
-                text-align: left;
-            }
-
-            img {
-                margin: auto;
-            }
-
-            
-        }
-        
-
-        @media screen and (max-width: 576px) {
-            .column-66 p {
-                color:#ff5405;
-                font-size: 16px;
-            }
-
-            .col p {
-            color:white;
-            font-size: 16px;
-        }
-        .colum p {
-            color:#ff5405;
-            font-size: 16px;
-        }
-        .column-66 {
-            float: none;
-            width: 100%;
-            padding-left: 20px;
-            padding-right:2px;
-            padding-top: 0px;
-        }
-            .large-font {
-                font-size: 26px;
-            }
-            .button {
-            border: none;
-            color: white;
-            padding: 10px 10px;
-            font-size: 16px;
-            cursor: pointer;
-            background-color: #ff5405;
-            text-align: center;
-            display: inline-block;
-            cursor: pointer;
-            border-radius: 16px;
-        }
-        .btn {
-            border: none;
-            color: #ff5405;
-            padding: 10px 10px;
-            font-size: 16px;
-            cursor: pointer;
-            background-color: white;
-            text-align: center;
-            display: inline-block;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 16px;
-        }
-        .btns {
-            border: none;
-            color: white;
-            padding: 10px 10px;
-            font-size: 16px;
-            cursor: pointer;
-            background-color: #ff5405;
-            text-align: center;
-            display: inline-block;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 16px;
-        }
-        
-        }
-
-        
-
-        @media (min-width:1200px) {
-            .container {
-                width: 100%;
-            }
-            .containers {
-                width: 100%;
-            }
-            .contain {
-                width: 100%;
-        }
-        }
-
-        @media (min-width:992px) {
-            .container {
-                width: 100%;
-            }
-            .containers {
-                width: 100%;
-            }
-            .contain {
-                width: 100%;
-        }
-        }
-
-        @media (min-width:768px) {
-            .container {
-                width: 100%;
-            }
-            .containers {
-                width: 100%;
-            }
-            .contain {
-                width: 100%;
-        }
-        }
-
-        @media screen and (max-width: 1000px) {
-
-            .column-66 {
-                width: 100%;
-                text-align: left;
-            }
-
-            img {
-                margin: auto;
-            }
-            .colum {
-            float: right;
-            width: 100%;
-            padding-top: 2px;
-            padding-left:2px;
-            padding-right:2px;
-            padding-bottom:2px;
-        }
-        .image {
-            float: right;
-            width: 50%;
-            padding: 0px;
-        }
-        .image2 {
-            float: right;
-            width: 50%;
-            padding: 0px;
-        }
-        }
-        @media screen and (max-width: 700px) {
-        .col {
-            float: left;
-            width: 100%;
-            padding-top: 2px;
-            padding-left:2px;
-            padding-right:2px;
-            padding-bottom:2px;
-        }
-        .photo {
-            float: left;
-            width: 80%;
-            padding: 0px;
-        }
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
     }
+    .column-66 {
+        width: 100%;
+        text-align: left;
+    }
+    img {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .column-66 p {
+        color: #ff5405;
+        font-size: 16px;
+    }
+    .col p {
+        color: white;
+        font-size: 16px;
+    }
+    .colum p {
+        color: #ff5405;
+        font-size: 16px;
+    }
+    .column-66 {
+        float: none;
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 2px;
+        padding-top: 0px;
+    }
+    .large-font {
+        font-size: 26px;
+    }
+    .button {
+        border: none;
+        color: white;
+        padding: 10px 10px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: #ff5405;
+        text-align: center;
+        display: inline-block;
+        cursor: pointer;
+        border-radius: 16px;
+    }
+    .btn {
+        border: none;
+        color: #ff5405;
+        padding: 10px 10px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: white;
+        text-align: center;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 16px;
+    }
+    .btns {
+        border: none;
+        color: white;
+        padding: 10px 10px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: #ff5405;
+        text-align: center;
+        display: inline-block;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 16px;
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        width: 100%;
+    }
+    .containers {
+        width: 100%;
+    }
+    .contain {
+        width: 100%;
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        width: 100%;
+    }
+    .containers {
+        width: 100%;
+    }
+    .contain {
+        width: 100%;
+    }
+}
+
+@media (min-width:768px) {
+    .container {
+        width: 100%;
+    }
+    .containers {
+        width: 100%;
+    }
+    .contain {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .column-66 {
+        width: 100%;
+        text-align: left;
+    }
+    img {
+        margin: auto;
+    }
+    .colum {
+        float: right;
+        width: 100%;
+        padding-top: 2px;
+        padding-left: 2px;
+        padding-right: 2px;
+        padding-bottom: 2px;
+    }
+    .image {
+        float: right;
+        width: 50%;
+        padding: 0px;
+    }
+    .image2 {
+        float: right;
+        width: 50%;
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .col {
+        float: left;
+        width: 100%;
+        padding-top: 2px;
+        padding-left: 2px;
+        padding-right: 2px;
+        padding-bottom: 2px;
+    }
+    .photo {
+        float: left;
+        width: 80%;
+        padding: 0px;
+    }
+}

@@ -13,6 +13,11 @@
  
  .container-fluid p {
      font-size: 20px;
+     color: #ff5405;
+ }
+ 
+ .media-body p {
+     color: #212529;
  }
  
  .image {
@@ -45,7 +50,7 @@
  }
  
  #btndon {
-     background-color: orangered;
+     background-color: #ff5405;
      color: white;
      font-size: 16px;
      padding: 16px 32px;
@@ -63,7 +68,7 @@
  form.example input[type=text] {
      padding: 10px;
      font-size: 17px;
-     border: 1px solid orangered;
+     border: 1px solid #ff5405;
      float: left;
      width: 80%;
      background: #f1f1f1;
@@ -73,17 +78,17 @@
      float: left;
      width: 20%;
      padding: 10px;
-     background: orangered;
+     background: #ff5405;
      color: white;
      font-size: 17px;
-     border: 1px solid orangered;
+     border: 1px solid #ff5405;
      border-left: none;
      cursor: pointer;
  }
  
  form.example button:hover {
      background: white;
-     color: #ff5405;
+     color: orangered;
  }
  
  form.example::after {
@@ -93,7 +98,7 @@
  }
  
  .butt1 {
-     background-color: orangered;
+     background-color: #ff5405;
      color: white;
      font-size: 12px;
      padding: 6px 14px;
@@ -103,7 +108,7 @@
  
  .butt1:hover {
      background-color: aliceblue;
-     color: #ff5405;
+     color: orangered;
  }
  
  .list-group-item-text {
