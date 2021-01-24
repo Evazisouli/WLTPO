@@ -1,4 +1,10 @@
 <%@ page language="java" contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ page import="ismgroup46.*, java.util.List" %>
+<%
+LostpetService lostpetService = new LostpetService();
+List<Lostpet> lostpets = lostpetService.showLostpets();
+%>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -213,232 +219,29 @@ form.example::after {
             <div class="container-fluid" style="margin-top: 2%;">
                 <div class="card-deck">
 
-                    
-                    <div class="card" style="width:400px">
-                                
-                        <img class="card-img-top" src="images/20.png" alt="Card image">
-                        <div class="card-body">
-                            <h2 class="card-title" style="color: orangered;"><span style="font-size:24px"><strong>Rina</strong></span></h2>
-                            <p class="card-text">Χάθηκε ενώ είχαμε πάει βόλτα. Φοράει πράσινο κολάρο και μοιάζει να ναι συνέχεια μπερδεμένη</p>
-                            <p class="card-text"><span style="font-size:14px"><i class="fas fa-location-arrow" style="color: orangered;"></i><b> Αθήνα, Χολαργός </b>
-                            <p class="card-text"><span style="font-size:14px"><i class="fas fa-calendar-day" style="color: orangered;"></i><b> 19/11/2020 </b>
-                                <p class="card-text"><span style="font-size:14px"><i class="fas fa-phone-alt" style="color: orangered;"></i><b> 6946923436 </b>
-                            
-
-                        </div>
-                    </div>
-                            <div class="card" style="width:400px">
-                                
-                                <img class="card-img-top" src="images/15.png" alt="Card image">
-                                <div class="card-body">
-                                    <h2 class="card-title" style="color: orangered;"><span style="font-size:24px"><strong>Sixtaras</strong></span></h2>
-                                    <p class="card-text">Βρέθηκε κοντά στα γραφεία της ΑΕΚ πλησίον του ΟΑΚΑ. Φοράει κόκκινο κολάρο και είναι ιδιαίτερα φιλικός</p>
-                                    <p class="card-text"><span style="font-size:14px"><i class="fas fa-location-arrow" style="color: orangered;"></i><b> Αθήνα, Μαρούσι </b>
-                                    <p class="card-text"><span style="font-size:14px"><i class="fas fa-calendar-day" style="color: orangered;"></i><b> 14/11/2020 </b>
-                                        <p class="card-text"><span style="font-size:14px"><i class="fas fa-phone-alt" style="color: orangered;"></i><b> 6946921332 </b>
+                    <%
+                    for (Lostpet lostp: lostpets){
+                    %>
+                        <div class="card" style="width:400px">
                                     
-
-                                </div>
-                            </div>
-                            <div class="card" style="width:400px">
-                                
-                                <img class="card-img-top" src="images/21.png" alt="Card image">
-                                <div class="card-body">
-                                    <h2 class="card-title" style="color: orangered;"><span style="font-size:24px"><strong>Dua</strong></span></h2>
-                                    <p class="card-text">Χάθηκε έπειτα από επίσκεψη στον κτηνίατρο. Γαβγίζει συνεχώς και με το παραμικρό</p>
-                                    <p class="card-text"><span style="font-size:14px"><i class="fas fa-location-arrow" style="color: orangered;"></i><b> Δήλεσι, Πλάκα  </b>
-                                    <p class="card-text"><span style="font-size:14px"><i class="fas fa-calendar-day" style="color: orangered;"></i><b> 25/12/2020 </b>
-                                        <p class="card-text"><span style="font-size:14px"><i class="fas fa-phone-alt" style="color: orangered;"></i><b> 6943425630 </b>
-                                    
-
-                                </div>
-                            </div>
-                            <div class="card" style="width:400px">
-                                
-                                <img class="card-img-top" src="images/24.png" alt="Card image">
-                                <div class="card-body">
-                                    <h2 class="card-title" style="color: orangered;"><span style="font-size:24px"><strong>Persia</strong></span></h2>
-                                    <p class="card-text">Χάθηκε στο γήπεδο μπάσκετ που είχαμε πάει για εκπαίδευση. Φοράει κίτρινο κολάρο. Κουτσαίνει ελαφρώς στο δεξί πόδι λόγω ρήξης στον πρόσθιο χιαστό</p>
-                                    <p class="card-text"><span style="font-size:14px"><i class="fas fa-location-arrow" style="color: orangered;"></i><b> Θεσσαλονίκη, Ξηροκρίνη  </b>
-                                    <p class="card-text"><span style="font-size:14px"><i class="fas fa-calendar-day" style="color: orangered;"></i><b> 03/08/2020 </b>
-                                        <p class="card-text"><span style="font-size:14px"><i class="fas fa-phone-alt" style="color: orangered;"></i><b> 6943429869 </b>
-                                    
-
-                                </div>
-                            </div>
-                            <div class="card" style="width:400px">
-                                
-                                <img class="card-img-top" src="images/19.png" alt="Card image">
-                                <div class="card-body">
-                                    <h2 class="card-title" style="color: orangered;"><span style="font-size:24px"><strong>Ben</strong></span></h2>
-                                    <p class="card-text">Βρέθηκε στη πλατεία Συντάγματος. Φοράει άσπρο κολάρο.</p>
-                                    <p class="card-text"><span style="font-size:14px"><i class="fas fa-location-arrow" style="color: orangered;"></i><b> Αθήνα, Σύνταγμα  </b>
-                                    <p class="card-text"><span style="font-size:14px"><i class="fas fa-calendar-day" style="color: orangered;"></i><b> 01/09/2020 </b>
-                                        <p class="card-text"><span style="font-size:14px"><i class="fas fa-phone-alt" style="color: orangered;"></i><b> 6943434642 </b>
-                                    
-
-                                </div>
+                            <img class="card-img-top" src="images/<%=lostp.getImage()%>.png" alt="Card image">
+                            <div class="card-body">
+                                <h2 class="card-title" style="color: orangered;"><span style="font-size:24px"><strong><%=lostp.getName()%></strong></span></h2>
+                                <p class="card-text"><%=lostp.getDescription()%></p>
+                                <p class="card-text"><span style="font-size:14px"><i class="fas fa-location-arrow" style="color: orangered;"></i><b> <%=lostp.getCity()%>, <%=lostp.getArea()%></b>
+                                    <p class="card-text"><span style="font-size:14px"><i class="fa fa-map-marker" style="color: orangered;"></i><b> <%=lostp.getStreet()%></b>
+                                <p class="card-text"><span style="font-size:14px"><i class="fas fa-calendar-day" style="color: orangered;"></i><b> <%=lostp.getDate()%> </b>
+                                <p class="card-text"><span style="font-size:14px"><i class="fas fa-phone-alt" style="color: orangered;"></i><b> <%=lostp.getPhone()%> </b>
+                             
                             </div>
                         </div>
+                    <%
+                    }
+                    %>
 
-                        <div class="card-deck" style="margin-top: 2%;">
-
-                            <div class="card" style="width:400px">
-                                
-                                <img class="card-img-top" src="images/24.png" alt="Card image">
-                                <div class="card-body">
-                                    <h2 class="card-title" style="color: orangered;"><span style="font-size:24px"><strong>Diva</strong></span></h2>
-                                    <p class="card-text">Χάθηκε στο κομμωτήριο. Φοράει ρόζ κολάρο. Δεν είναι ιδιαίτερα φιλική</p>
-                                    <p class="card-text"><span style="font-size:14px"><i class="fas fa-location-arrow" style="color: orangered;"></i><b> Αθήνα, Εκάλη  </b>
-                                    <p class="card-text"><span style="font-size:14px"><i class="fas fa-calendar-day" style="color: orangered;"></i><b> 24/06/2020 </b>
-                                        <p class="card-text"><span style="font-size:14px"><i class="fas fa-phone-alt" style="color: orangered;"></i><b> 6943443646 </b>
-                                    
-
-                                </div>
-                            </div>
-                            <div class="card" style="width:400px">
-                                
-                                <img class="card-img-top" src="images/23.png" alt="Card image">
-                                <div class="card-body">
-                                    <h2 class="card-title" style="color: orangered;"><span style="font-size:24px"><strong>Bugs</strong></span></h2>
-                                    <p class="card-text">Χάθηκε από σπίτι φίλου. Έχει μια εγκοπή στο δεξί αυτί</p>
-                                    <p class="card-text"><span style="font-size:14px"><i class="fas fa-location-arrow" style="color: orangered;"></i><b> Πάτρα, Τσακάλωφ  </b>
-                                    <p class="card-text"><span style="font-size:14px"><i class="fas fa-calendar-day" style="color: orangered;"></i><b> 19/02/2020 </b>
-                                        <p class="card-text"><span style="font-size:14px"><i class="fas fa-phone-alt" style="color: orangered;"></i><b> 699342642 </b>
-                                    
-
-                                </div>
-                            </div>
-                            <div class="card" style="width:400px">
-                                
-                                <img class="card-img-top" src="images/21.png" alt="Card image">
-                                <div class="card-body">
-                                    <h2 class="card-title" style="color: orangered;"><span style="font-size:24px"><strong>Drake</strong></span></h2>
-                                    <p class="card-text">Βρέθηκε στο ίδρυμα Σταύρος Νιάρχος.</p>
-                                    <p class="card-text"><span style="font-size:14px"><i class="fas fa-location-arrow" style="color: orangered;"></i><b> Αθήνα, Π.Φάληρο  </b>
-                                    <p class="card-text"><span style="font-size:14px"><i class="fas fa-calendar-day" style="color: orangered;"></i><b> 12/01/2020 </b>
-                                        <p class="card-text"><span style="font-size:14px"><i class="fas fa-phone-alt" style="color: orangered;"></i><b> 697343926 </b>
-                                    
-
-                                </div>
-                            </div>
-                            <div class="card" style="width:400px">
-                                
-                                <img class="card-img-top" src="images/20.png" alt="Card image">
-                                <div class="card-body">
-                                    <h2 class="card-title" style="color: orangered;"><span style="font-size:24px"><strong>Frida</strong></span></h2>
-                                    <p class="card-text">Χάθηκε! Φοράει μπεζ κολάρο. Eίναι άκρως φιλική</p>
-                                    <p class="card-text"><span style="font-size:14px"><i class="fas fa-location-arrow" style="color: orangered;"></i><b> Αθήνα, Εκάλη  </b>
-                                    <p class="card-text"><span style="font-size:14px"><i class="fas fa-calendar-day" style="color: orangered;"></i><b> 24/06/2020 </b>
-                                        <p class="card-text"><span style="font-size:14px"><i class="fas fa-phone-alt" style="color: orangered;"></i><b> 6943443646 </b>
-                                    
-
-                                </div>
-                            </div>
-                            <div class="card" style="width:400px">
-                                
-                                <img class="card-img-top" src="images/22.png" alt="Card image">
-                                <div class="card-body">
-                                    <h2 class="card-title" style="color: orangered;"><span style="font-size:24px"><strong>Sam</strong></span></h2>
-                                    <p class="card-text">Χάθηκε στη βόλτα μας. Φοράει άσπρο κολάρο. Έχει ουλή στο αριστερό μπροστινό πόδι λόγω ρήξης μηνίσκου</p>
-                                    <p class="card-text"><span style="font-size:14px"><i class="fas fa-location-arrow" style="color: orangered;"></i><b> Αθήνα, Φιλοθέη  </b>
-                                    <p class="card-text"><span style="font-size:14px"><i class="fas fa-calendar-day" style="color: orangered;"></i><b> 24/09/2020 </b>
-                                        <p class="card-text"><span style="font-size:14px"><i class="fas fa-phone-alt" style="color: orangered;"></i><b> 6913443652 </b>
-                                    
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card-deck" style="margin-top: 2%;">
-
-                            <div class="card" style="width:400px">
-                                
-                                <img class="card-img-top" src="images/16.png" alt="Card image">
-                                <div class="card-body">
-                                    <h2 class="card-title" style="color: orangered;"><span style="font-size:24px"><strong>CATia</strong></span></h2>
-                                    <p class="card-text">Χάθηκε ενώ είχαμε πάει βόλτα. Φοράει πράσινο κολάρο και μοιάζει να ναι συνέχεια μπερδεμένη</p>
-                                    <p class="card-text"><span style="font-size:14px"><i class="fas fa-location-arrow" style="color: orangered;"></i><b> Αθήνα, Χολαργός </b>
-                                    <p class="card-text"><span style="font-size:14px"><i class="fas fa-calendar-day" style="color: orangered;"></i><b> 19/11/2020 </b>
-                                        <p class="card-text"><span style="font-size:14px"><i class="fas fa-phone-alt" style="color: orangered;"></i><b> 6946923436 </b>
-                                    
-                
-                                </div>
-                            </div>
-                            <div class="card" style="width:400px">
-                                
-                                <img class="card-img-top" src="images/17.png" alt="Card image">
-                                <div class="card-body">
-                                    <h2 class="card-title" style="color: orangered;"><span style="font-size:24px"><strong>Buffcat</strong></span></h2>
-                                    <p class="card-text">Βρέθηκε κάτω από τη πολυκατοικία μου. Δεν φοράει κολάρο. Όταν τον βρήκα έκλεβε λεφτά από τα παιδιά μου που είχαν βγει για κάλαντα</p>
-                                    <p class="card-text"><span style="font-size:14px"><i class="fas fa-location-arrow" style="color: orangered;"></i><b> Δήλεσι, Πλάκα  </b>
-                                    <p class="card-text"><span style="font-size:14px"><i class="fas fa-calendar-day" style="color: orangered;"></i><b> 25/12/2020 </b>
-                                        <p class="card-text"><span style="font-size:14px"><i class="fas fa-phone-alt" style="color: orangered;"></i><b> 6943425630 </b>
-                                    
-
-                                </div>
-                            </div>
-                            <div class="card" style="width:400px">
-                                
-                                <img class="card-img-top" src="images/18.png" alt="Card image">
-                                <div class="card-body">
-                                    <h2 class="card-title" style="color: orangered;"><span style="font-size:24px"><strong>Αntonis</strong></span></h2>
-                                    <p class="card-text">Χάθηκε στο γήπεδο μπάσκετ που είχαμε πάει για εκπαίδευση. Φοράει κίτρινο κολάρο. Κουτσαίνει ελαφρώς στο δεξί πόδι λόγω ρήξης στον πρόσθιο χιαστό</p>
-                                    <p class="card-text"><span style="font-size:14px"><i class="fas fa-location-arrow" style="color: orangered;"></i><b> Θεσσαλονίκη, Ξηροκρίνη  </b>
-                                    <p class="card-text"><span style="font-size:14px"><i class="fas fa-calendar-day" style="color: orangered;"></i><b> 03/08/2020 </b>
-                                        <p class="card-text"><span style="font-size:14px"><i class="fas fa-phone-alt" style="color: orangered;"></i><b> 6943429869 </b>
-                                    
-
-                                </div>
-                            </div>
-                            <div class="card" style="width:400px">
-                                
-                                <img class="card-img-top" src="images/24.png" alt="Card image">
-                                <div class="card-body">
-                                    <h2 class="card-title" style="color: orangered;"><span style="font-size:24px"><strong>Freq</strong></span></h2>
-                                    <p class="card-text">Χάθηκε στο γήπεδο μπάσκετ που είχαμε πάει για εκπαίδευση. Φοράει κίτρινο κολάρο. Κουτσαίνει ελαφρώς στο δεξί πόδι λόγω ρήξης στον πρόσθιο χιαστό</p>
-                                    <p class="card-text"><span style="font-size:14px"><i class="fas fa-location-arrow" style="color: orangered;"></i><b> Θεσσαλονίκη, Ξηροκρίνη  </b>
-                                    <p class="card-text"><span style="font-size:14px"><i class="fas fa-calendar-day" style="color: orangered;"></i><b> 03/08/2020 </b>
-                                        <p class="card-text"><span style="font-size:14px"><i class="fas fa-phone-alt" style="color: orangered;"></i><b> 6943429869 </b>
-                                    
-
-                                </div>
-                            </div>
-                            <div class="card" style="width:400px">
-                                
-                                <img class="card-img-top" src="images/15.png" alt="Card image">
-                                <div class="card-body">
-                                    <h2 class="card-title" style="color: orangered;"><span style="font-size:24px"><strong>Seventy</strong></span></h2>
-                                    <p class="card-text">Βρέθηκε κοντά στα γραφεία της ΑΕΚ πλησίον του ΟΑΚΑ. Φοράει άσπρο κολάρο και είναι ιδιαίτερα φιλικός</p>
-                                    <p class="card-text"><span style="font-size:14px"><i class="fas fa-location-arrow" style="color: orangered;"></i><b> Αθήνα, Μαρούσι </b>
-                                    <p class="card-text"><span style="font-size:14px"><i class="fas fa-calendar-day" style="color: orangered;"></i><b> 14/11/2020 </b>
-                                        <p class="card-text"><span style="font-size:14px"><i class="fas fa-phone-alt" style="color: orangered;"></i><b> 6946921332 </b>
-                                    
-
-                                </div>
-                            </div>
-                        </div>
-
-
-
+                </div>
             </div>
-
-
-        
-
-
-
-
-
-
     </div>
-
-    
-
-    
-
-   
-
 
     <script>
         function myFunction() {
