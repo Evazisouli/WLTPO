@@ -1,0 +1,319 @@
+#app-container {
+    display: flex;
+}
+
+#filter-toggle {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background: orangered;
+    transition: 0.2s all;
+}
+
+#filter-toggle:hover {
+    cursor: pointer;
+    background: white;
+}
+
+.filter__container {
+    position: fixed;
+    right: 0px;
+    top: 50px;
+    margin: 1%;
+    background: white;
+    transition: 0.2s all;
+    overflow: hidden;
+    width: 30px;
+    max-width: 1000px;
+    min-height: 30px;
+    max-height: 30px;
+    border: 1px solid orange;
+    border-radius: 5px;
+    z-index: 99;
+}
+
+.filter__container h3 {
+    color: orangered;
+    font-weight: 500;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    border-bottom: orange solid 1px;
+    margin: auto;
+    margin-top: 0px;
+    padding-bottom: 4px;
+    margin-bottom: 16px;
+}
+
+.filter__only-on-show {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 0%;
+    overflow: hidden;
+    max-height: 0px;
+    box-sizing: border-box;
+    transition: 0.2s all;
+}
+
+
+/* SHOW TOGGLE EFFECTS */
+
+.filter__container--show {
+    width: 97vw;
+    border-radius: 0px;
+    max-height: 100vh;
+    padding: 8px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.filter__container--show #filter-toggle {
+    border: none;
+}
+
+@keyframes wait-first {
+    from {
+        max-height: 0vh;
+    }
+    to {
+        max-height: 100vh;
+    }
+}
+
+.filter__container--show .filter__only-on-show {
+    width: 100%;
+    animation: wait-first 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
+}
+
+
+/* FILTER BOX STYLES */
+
+.filter__dropdown {
+    margin-right: 4px;
+    margin-bottom: 4px;
+    text-align: center;
+    list-style: none;
+    background: orangered;
+    padding: 8px 16px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.filter__dropdown li:first-of-type {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid white;
+    margin-bottom: 4px;
+    padding-bottom: 4px;
+    color: #fff;
+}
+
+.filter__dropdown input[type="checkbox"] {
+    display: none;
+    margin: 0px;
+}
+
+.filter__dropdown input[type="checkbox"]+label {
+    display: inline-block;
+    padding: 2px 4px;
+    min-width: 90px;
+    border-radius: 4px;
+    color: white;
+    margin-bottom: 4px;
+}
+
+.filter__dropdown input[type="checkbox"]+label:hover {
+    cursor: pointer;
+    background: white;
+    color: orangered;
+}
+
+.filter__dropdown input[type="checkbox"]:checked+label {
+    background: white;
+    color: orangered;
+}
+
+.filter-test-deck {
+    margin: 16px;
+    padding: 16px;
+}
+
+.card-stack {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.card li {
+    color: red;
+}
+
+.card li span {
+    color: blue;
+}
+
+* {
+    box-sizing: border-box
+}
+
+img {
+    width: 100%;
+    height: 250px;
+}
+
+h2 {
+    color: orangered;
+}
+
+@media (min-width:1200px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (min-width:768px) {
+    .container {
+        width: 100%;
+    }
+}
+
+.row {
+    padding-top: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    margin-bottom: 16px;
+    padding-left: 8px;
+    padding-right: 4px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 orange;
+    height: 520px;
+}
+
+.large-font {
+    font-size: 36px;
+}
+
+.con {
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-top: 40px;
+    color: #ff5405;
+}
+
+.container {
+    padding: 16px 16px;
+}
+
+.container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: orange;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ff5405;
+    text-align: center;
+    display: inline-block;
+    margin: 16px 18px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.button:hover {
+    background-color: orangered;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-right {
+    position: absolute;
+    right: 0px;
+    margin: 1px 18px;
+}
+
+#btnfil {
+    background-color: orangered;
+    color: white;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 16px;
+}
+
+#btnfil:hover {
+    background-color: whitesmoke;
+    color: orangered;
+    border-radius: 16px;
+}
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid orangered;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: orangered;
+    color: white;
+    font-size: 17px;
+    border: 1px solid orangered;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.example button:hover {
+    background: white;
+    color: #ff5405;
+}
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
