@@ -124,7 +124,7 @@
 
 
       <h1 style="color:black; text-align: center; font-size:36px;"><b>Ανάρτησε αγγελία</b></h1>
-      <p style="color:white; text-align: center; font-size:20px;"><b>Αν βρήκες κάποιο χαμένο ζώο ή ψάχνεις κάποιο κατοικίδιο που έχασες, συμπλήρωσε τα στοιχεία της φόρμας και γνωστοποίησε το στην κοινότητα του Who Let The Dogs Out!</b></p>     
+      <p style="color:black; text-align: center; font-size:20px;"><b>Αν βρήκες κάποιο χαμένο ζώο ή ψάχνεις κάποιο κατοικίδιο που έχασες, συμπλήρωσε τα στοιχεία της φόρμας και γνωστοποίησε το στην κοινότητα του Who Let The Dogs Out!</b></p>     
 
       
 
@@ -202,16 +202,13 @@
         </div>
             </div>
           </form>
-          <div class="checkbox">
-            <label style="color: white; font-size:16px;"><input type="checkbox"><b>*Σύμφωνα με τον νέο Κανονισμό της Ε.Ε. 679/2016 (GDPR) για την Προστασία των Προσωπικών Δεδομένων, δέχεστε να μπορούμε να επικοινωνήσουμε μαζί σας βάσει των στοιχείων που εισήγατε στην φόρμα εγγραφής</b></label>
-          </div>
    
    
    <div class="bt">
            <button type="submit"><a style="color: white;" href="#">Upload</a></button>
      </div>
       
-
+     <%@ include file="footer.jsp" %>
 </body>
 
 </html>

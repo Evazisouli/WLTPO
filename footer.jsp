@@ -11,7 +11,9 @@
   </script>
  
 <!-- Site footer -->
-<% if ((!(request.getRequestURI().replace(request.getContextPath() + "/", "").equals("loginpage.jsp")))) { %>
+<% if ((!(request.getRequestURI().replace(request.getContextPath() + "/", "").equals("loginpage.jsp"))) && 
+(!(request.getRequestURI().replace(request.getContextPath() + "/", "").equals("upload.jsp"))) &&
+(!(request.getRequestURI().replace(request.getContextPath() + "/", "").equals("Confirmation.jsp")))) { %>
  <footer class="site-footer">
   <div class="container1">
     <div class="row">
