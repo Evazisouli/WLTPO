@@ -8,42 +8,20 @@
   body {
     background:url(../images/formz.jpg); background-size:120%; background-repeat: no-repeat;
   }
- 
-  input[type=text], input[type=password], input[type="name"], input[type="email"], input[type="number"], input[type="username"], input[type="address"] {
-    width: 30%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: block;
-    box-sizing: border-box;
-  }
-
-  .form-group {
-    text-align: center;
-    font-size:12px;
-  }
-  
-  .checkbox {
-    padding-left: 20%;
-  }
-  
-  .lol {
-    padding-left: 42%;
-  }
-  
-  .bt {
-    padding-left: 42%;
-  }
   
   .submit {
-    border: none;
+  border: none;
   color: white;
-  padding: 12px 16px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-right: 10px;
+  padding-bottom: 5px;
   font-size: 16px;
   cursor: pointer;
   background-color: #ff5405;
   text-align: center;
   display: inline-block;
-  margin: 50px 680px;
+  margin: 20px 680px;
   cursor: pointer;
   border-radius: 8px;
   }
