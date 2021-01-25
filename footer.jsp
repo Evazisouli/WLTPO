@@ -13,6 +13,7 @@
 <!-- Site footer -->
 <% if ((!(request.getRequestURI().replace(request.getContextPath() + "/", "").equals("loginpage.jsp"))) && 
 (!(request.getRequestURI().replace(request.getContextPath() + "/", "").equals("upload.jsp"))) &&
+(!(request.getRequestURI().replace(request.getContextPath() + "/", "").equals("signup.jsp"))) &&
 (!(request.getRequestURI().replace(request.getContextPath() + "/", "").equals("Confirmation.jsp")))) { %>
  <footer class="site-footer">
   <div class="container1">

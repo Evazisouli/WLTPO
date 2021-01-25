@@ -1,0 +1,84 @@
+* {
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+  }
+
+  
+
+  body {
+    background:url(../images/signup.jpg); background-size:100%;
+  }
+ 
+
+  
+  button {
+    background-color:orangered;
+    color: white;
+    padding: 8px 12px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .center {
+    margin: 0;
+    position: absolute;
+    top:41%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .center2 {
+    margin: 0;
+    position: absolute;
+    top:55%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+
+  button:hover {
+    color:white;
+  }
+  
+
+  span.psw {
+    float: center;
+    padding-top: 16px;
+    padding-right: 16px;
+  }
+  
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width:1024px) {
+    .nav-links {
+      width: 150%;
+      display: flex;
+      justify-content: space-around;
+    }
+    body {
+      background:url(../images/signup.jpg);
+    }
+    
+    .center {
+      padding-top:270px;
+    }
+
+    .center2 {
+      padding-top:250px;
+    }
+  
+  
+  }

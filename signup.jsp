@@ -68,7 +68,7 @@
       .button {
           border: none;
           color: white;
-          padding: 14px 28px;
+          padding: 8px 12px;
           font-size: 20px;
           cursor: pointer;
           background-color: #ff5405;
@@ -113,7 +113,7 @@
             <button style="color: white;" type="submit"><a style="color: white; font-size:large" href="http://ism.dmst.aueb.gr/ismgroup46/signup2.jsp">Είμαστε Φιλοζωική Οργάνωση</a></button>
         </div>
       </div>
-      
+      <%@ include file="footer.jsp" %>
 
 </body>
 
