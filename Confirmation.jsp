@@ -55,7 +55,7 @@ if ((session.getAttribute("buttonadoption") == "no") && (session.getAttribute("p
         <span aria-hidden="true"></span> Αναίρεση αιτήματος
     </a>
     
-         
+    <%@ include file="footer.jsp" %>
     </body>
     
     </html>
