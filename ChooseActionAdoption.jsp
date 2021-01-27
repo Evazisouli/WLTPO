@@ -16,17 +16,20 @@
 
                 <link href="css/homepage.css" rel="stylesheet">
                 <link href="css/chooseAdoption.css" rel="stylesheet">
+		<link href="css/footer.css" rel="stylesheet">
+
 
                 <%@ include file="header.jsp" %>
 
             </head>
-
             <body>
+ <div id="page-container">
+   <div id="content-wrap">
                 <%@ include file="navigationmenu.jsp" %>
                     <div class="con">
-                        <h1 class="large-font" style="color:orangered"><b>Γνωρίστε τους πιο τρυφερούς μικρούς μας φίλους!</b></h1>
-                        <p><span style="font-size:36px">Όλοι σας μπορείτε να κάνετε μία αρχή υιοθετώντας ένα ζωάκι.</span> <br> Ρίξτε μία ματιά στα ζωάκια που προσφέρονται για υιοθεσία και θα τα λατρέψετε.
-                            <br>Υποσχόμαστε πως θα σας κερδίσουν από τη πρώτη κιόλας γνωριμία.</p>
+                        <h1 class="large-font" style="color:orangered"><b>   Γνωρίστε τους πιο τρυφερούς μικρούς μας φίλους!</b></h1>
+                        <p><span style="font-size:36px">   Όλοι σας μπορείτε να κάνετε μία αρχή υιοθετώντας ένα ζωάκι.</span> <br>   Ρίξτε μία ματιά στα ζωάκια που προσφέρονται για υιοθεσία και θα τα λατρέψετε.
+                            <br>   Υποσχόμαστε πως θα σας κερδίσουν από τη πρώτη κιόλας γνωριμία.</p>
 
 
                         <div id='filter-container' class='filter__container'>
@@ -158,7 +161,7 @@
                                                         <%=zwo.getAge() %> χρονών</p>
 
                                                     <p><a class="button" href="<%=request.getContextPath() %>/ShowPetDetails.jsp?id=<%=zwo.getIdpet()%>">Μάθε Περισσότερα
-                            </a></p>
+                                                    </a></p>
                                                     <% id = id + 1; %>
 
                                                 </div>
@@ -166,26 +169,15 @@
                                         </div>
 
                                         <% 	} %>
-
-
-
                                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                             </div>
+                        </div>
+                    </div>
+   </div>
+</div>
+        
+<%@ include file = "footer.jsp" %>
+</div>
 
                             <script>
                                 let STATE = {
@@ -382,8 +374,7 @@
 
                                 printState(STATE);
                             </script>
-
-
+        
             </body>
 
             </html>

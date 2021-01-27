@@ -10,10 +10,12 @@ List<Lostpet> lostpets = lostpetService.showLostpets();
 
             <head>
                 <title>Αναζήτηση και Εύρεση Κατοικιδίου</title>
-
+	
                 <link href="css/homepage.css" rel="stylesheet">
-                <%@ include file="header.jsp" %>
+		<link href="css/footer.css" rel="stylesheet">
 
+                <%@ include file="header.jsp" %>
+		
                     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
                     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -282,6 +284,7 @@ List<Lostpet> lostpets = lostpetService.showLostpets();
             }
         }
     </script>
+<%@ include file="footer.jsp" %>
 
 </body>
 
