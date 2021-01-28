@@ -15,31 +15,7 @@ Petlover lov = serv.findPetlover(usern);
     <link rel="stylesheet" href="css/homepage.css">
 	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 </head>
-<style>
-    .topnav3 {
-        overflow: hidden;
-        background-color: #ffff;
-      }
-      
-      .topnav3 a {
-        float: left;
-        color: #000000;
-        text-align: center;
-        padding: 18px 13px;
-        text-decoration: none;
-        font-size: 16px;
-      }
-      
-      .topnav3 a:hover {
-        background-color: #ddd;
-        color: black;
-      }
-      
-      .topnav3 a.active {
-        background-color: #ff5405;
-        color: white;
-      }
-      </style>
+
 <body>
     <%@ include file="navigationmenu.jsp" %>
 
