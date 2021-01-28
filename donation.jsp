@@ -34,7 +34,7 @@
                         <p> <span style="font-size:36px">Κάθε δωρεά μετράει!</span> <br> Επιλέξτε τη φιλοζωική της αρεσκείας σας και συνδράμετε ενεργά στη συνέχιση του έργου της.
                         </p>
 
-                        <div class="row" style="margin-top: 2%;">
+                        <div class="ro" style="margin-top: 2%;">
                             <div class="col-6">
                                 <form class="example" style="max-width:300px; margin-top: 2%;">
                                     <input type="text" id="myFilter" placeholder="Αναζήτηση Φιλοζωικής.." onkeyup="myFunction()" name="search2">

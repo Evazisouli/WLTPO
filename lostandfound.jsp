@@ -27,6 +27,10 @@ List<Lostpet> lostpets = lostpetService.showLostpets();
                             width: 100%;
                             height: 100%;
                         }
+
+                        .card{
+                            height:800px;
+                        }
                         
                         body {
                             margin: 0;
@@ -245,7 +249,7 @@ List<Lostpet> lostpets = lostpetService.showLostpets();
                                     <div class="column">
                                         <div class="card" style="width:400px">
 
-                                            <img class="card-img-top" src="images/<%=lostp.getImage()%>.png" alt="Card image">
+                                            <img class="card-img-top" src="images/<%=lostp.getImage()%>.png" alt="Card image" style="width:100%">
                                             <div class="card-body">
                                                 <h2 class="card-title" style="color: orangered;"><span style="font-size:24px"><strong><%=lostp.getName()%></strong></span></h2>
                                                 <p class="card-text">
