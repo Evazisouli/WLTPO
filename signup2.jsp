@@ -26,73 +26,9 @@
     <!-- Main CSS-->
     <link href="css/main.css" rel="stylesheet" media="all">
     <link href="css/homepage.css" rel="stylesheet">
+    <link href="css/signup2.css" rel="stylesheet">
 </head>
 
-<style>
-    * {
-        box-sizing: border-box
-    }
-
-    @media (min-width:1200px) {
-        .container {
-            width: 100%;
-        }
-    }
-
-    @media (min-width:992px) {
-        .container {
-            width: 100%;
-        }
-    }
-
-    @media (min-width:768px) {
-        .container {
-            width: 100%;
-        }
-    }
-
-    .row {
-        padding-top: 10px;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-
-    .column {
-        float: left;
-        width: 25%;
-        margin-bottom: 16px;
-        padding-left: 8px;
-        padding-right: 4px;
-    }
-
-    .card {
-        box-shadow: 0 4px 8px 0 orange;
-        height:600px;
-    }
-
-    .container {
-        padding: 16px 16px;
-    }
-
-    .container::after,
-    .row::after {
-        content: "";
-        clear: both;
-        display: table;
-    }
-
-    .title {
-        color: white;
-    }
-
-    body {
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        color: white;
-    }
-
-
-</style>
 
 <body>
 
