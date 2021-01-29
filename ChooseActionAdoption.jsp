@@ -44,8 +44,8 @@
                                             <label for="age-paidaki">Εώς 1 ετών</label>
                                         </li>
                                         <li>
-                                            <input onclick='updateFilter(this)' type="checkbox" id="age-paidaki" name="age" value="a2">
-                                            <label for="age-paidaki">2 ετών</label>
+                                            <input onclick='updateFilter(this)' type="checkbox" id="age-paidi" name="age" value="a2">
+                                            <label for="age-paidi">2 ετών</label>
                                         </li>
                                         <li>
                                             <input onclick='updateFilter(this)' type="checkbox" id="age-efhvos" name="age" value="a3">
@@ -132,7 +132,7 @@
                             </div>
 
 
-                            <button id='filter-toggle'><i class="fas fa-filter"></i></button>
+                            <button id='filter-toggle'><span class="glyphicon glyphicon-filter" aria-hidden="true" style="color: black;"></span></button>
                         </div>
 
                         <div id='app-container'>

@@ -10,14 +10,17 @@
     height: 30px;
     border: none;
     border-radius: 5px;
-    background: orangered;
+    background: #ff5405;
     transition: 0.2s all;
 }
 
 #filter-toggle:hover {
     cursor: pointer;
-    background: white;
+    background-color: rgb(230, 106, 58);
+
 }
+
+
 
 .filter__container {
     position: fixed;
