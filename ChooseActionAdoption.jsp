@@ -20,6 +20,26 @@
 
 
                 <%@ include file="header.jsp" %>
+                <style>
+                    @media screen and (max-width: 1000px) {
+                        .column {
+                            width: 33.333%;
+                        }
+                    }
+    
+                    @media screen and (max-width: 800px) {
+                        .column {
+                            width: 50%;
+                        }
+                    }
+    
+                    @media screen and (max-width: 600px) {
+                        .column {
+                            width: 100%;
+                        }
+                    }
+                  
+                </style>
 
             </head>
             <body>
