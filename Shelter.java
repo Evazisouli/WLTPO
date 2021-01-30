@@ -13,11 +13,11 @@ public class Shelter {
 	private String phone;
 	private String description;
 	private String needs;
-	private String image;
+
 
     
 	public Shelter(String idshelter, String name, String password, String city, String area, String address, int postal_code,
-			String contact, String mail, String phone, String description, String needs, String image) {
+			String contact, String mail, String phone, String description, String needs) {
 		
 		this.idshelter = idshelter;
 		this.name = name;
@@ -31,7 +31,7 @@ public class Shelter {
 		this.phone = phone;
 		this.description = description;
 		this.needs = needs;
-		this.image = image;
+
 	}
 	public String getUsername() {
 		return idshelter;
@@ -104,12 +104,6 @@ public class Shelter {
 	}
 	public void setNeeds(String needs) {
 		this.needs = needs;
-	}
-	public String getImage() {
-		return image;
-	}
-	public void setImage(String image) {
-		this.image = image;
 	}
 
 	

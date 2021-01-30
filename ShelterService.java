@@ -26,7 +26,7 @@ public class ShelterService {
             Shelter shelter = new Shelter(rs.getString("idshelter"), rs.getString("name"), rs.getString("password"), rs.getString("city"), 
             rs.getString("area"), rs.getString ("address"), rs.getInt("postal_code"),
             rs.getString("contact"), rs.getString("mail"), rs.getString("phone"), rs.getString("description"), 
-            rs.getString("needs"), rs.getString("image"));
+            rs.getString("needs"));
 			rs.close();
 			stmt.close();
 			return shelter;
@@ -61,7 +61,7 @@ public class ShelterService {
 
 				shelters.add(new Shelter(rs.getString("idshelter"), rs.getString("name"), rs.getString("password"), rs.getString("city"), rs.getString("area"), rs.getString("address"), 
                 rs.getInt("postal_code"), rs.getString("contact"), rs.getString("mail"), rs.getString("phone"), 
-                rs.getString("description"), rs.getString("needs"), rs.getString("image")));
+                rs.getString("description"), rs.getString("needs")));
 			}
 
 
@@ -104,7 +104,7 @@ public class ShelterService {
 			Shelter shelter = new Shelter(rs.getString("idshelter"), 
 			rs.getString("name"),  rs.getString("password"), rs.getString("city"), rs.getString("area"), rs.getString("address"), 
 			rs.getInt("postal_code"), rs.getString("contact"), rs.getString("mail"), 
-			rs.getString("phone"), rs.getString("description"), rs.getString("needs"), rs.getString("image"));
+			rs.getString("phone"), rs.getString("description"), rs.getString("needs"));
 			rs.close();
 			stmt.close();
 
@@ -128,7 +128,7 @@ public class ShelterService {
         Connection con = null;
         PreparedStatement stmt = null;
 		String checkSql = "SELECT * FROM shelter WHERE idshelter = ?";
-        String sql = "INSERT INTO shelter(idshelter, name, password, city, area, address, postal_code, contact, mail, phone, description, needs, image) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
+        String sql = "INSERT INTO shelter(idshelter, name, password, city, area, address, postal_code, contact, mail, phone, description, needs) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
 
         try {
             
@@ -160,7 +160,6 @@ public class ShelterService {
 				   stmt.setString(10, shelter.getPhone());
 				   stmt.setString(11, shelter.getDescription());
 				   stmt.setString(12, shelter.getNeeds());
-				   stmt.setString(13, shelter.getImage());
 
             stmt.executeUpdate();
             

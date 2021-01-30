@@ -25,7 +25,7 @@ public class PetloverService {
 
 			Petlover petlover = new Petlover(rs.getString("idpetlover"), rs.getString("password"), 
 			rs.getString("name"), rs.getString("surname"), rs.getString("city"), rs.getString("area"), 
-			rs.getString("mail"), rs.getString("phone"), rs.getString("description"), rs.getString("image"));
+			rs.getString("mail"), rs.getString("phone"), rs.getString("description"));
 			rs.close();
 			stmt.close();
 
@@ -63,7 +63,7 @@ public class PetloverService {
 
             Petlover petlover = new Petlover(rs.getString("idpetlover"), rs.getString("password"), 
 			rs.getString("name"), rs.getString("surname"), rs.getString("city"), rs.getString("area"), 
-			rs.getString("mail"), rs.getString("phone"), rs.getString("description"),  rs.getString("image"));
+			rs.getString("mail"), rs.getString("phone"), rs.getString("description"));
 			rs.close();
 			stmt.close();
 			return petlover;

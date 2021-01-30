@@ -9,10 +9,9 @@ public class Petlover {
     private String mail;
     private String phone;
     private String description;
-    private String image;
 
     public Petlover(String username, String password, String name, String surname, 
-    String city, String area, String mail, String phone, String description,  String image) {
+    String city, String area, String mail, String phone, String description) {
         this.username = username;
         this.password = password;
         this.name = name;
@@ -22,7 +21,6 @@ public class Petlover {
         this.mail = mail;
         this.phone = phone;
         this.description = description;
-        this.image = image;
         }
 
 
@@ -96,14 +94,6 @@ public class Petlover {
 
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    public String getImage() {
-        return image;
-    }
-
-    public void setImage(String image) {
-        this.image = image;
     }
 
 }
