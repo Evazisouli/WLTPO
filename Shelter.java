@@ -1,7 +1,7 @@
 package ismgroup46;
 
 public class Shelter {
-    private String idshelter;
+    private String username;
 	private String name;
 	private String password;
 	private String city;
@@ -13,13 +13,14 @@ public class Shelter {
 	private String phone;
 	private String description;
 	private String needs;
+	private String image;
 
 
     
-	public Shelter(String idshelter, String name, String password, String city, String area, String address, int postal_code,
-			String contact, String mail, String phone, String description, String needs) {
+	public Shelter(String username, String name, String password, String city, String area, String address, int postal_code,
+			String contact, String mail, String phone, String description, String needs, String image) {
 		
-		this.idshelter = idshelter;
+		this.username = username;
 		this.name = name;
 		this.password = password;
 		this.city = city;
@@ -31,18 +32,21 @@ public class Shelter {
 		this.phone = phone;
 		this.description = description;
 		this.needs = needs;
+		this.image = image;
 
 	}
 	public String getUsername() {
-		return idshelter;
+		return username;
 	}
-	public void setUsername(String idshelter) {
-		this.idshelter = idshelter;
+
+	public void setUsername(String username) {
+		this.username = username;
 	}
+	
 	public String getName() {
 		return name;
 	}
-	public void setName(String password) {
+	public void setName(String name) {
 		this.name = name;
 	}
 	public String getPassword() {
@@ -104,6 +108,14 @@ public class Shelter {
 	}
 	public void setNeeds(String needs) {
 		this.needs = needs;
+	}
+
+	public String getImage() {
+		return image;
+	}
+
+	public void setImage(String image) {
+		this.image = image;
 	}
 
 	

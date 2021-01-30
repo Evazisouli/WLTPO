@@ -26,7 +26,7 @@ public class ShelterService {
             Shelter shelter = new Shelter(rs.getString("idshelter"), rs.getString("name"), rs.getString("password"), rs.getString("city"), 
             rs.getString("area"), rs.getString ("address"), rs.getInt("postal_code"),
             rs.getString("contact"), rs.getString("mail"), rs.getString("phone"), rs.getString("description"), 
-            rs.getString("needs"));
+            rs.getString("needs"), rs.getString("image"));
 			rs.close();
 			stmt.close();
 			return shelter;
@@ -61,7 +61,7 @@ public class ShelterService {
 
 				shelters.add(new Shelter(rs.getString("idshelter"), rs.getString("name"), rs.getString("password"), rs.getString("city"), rs.getString("area"), rs.getString("address"), 
                 rs.getInt("postal_code"), rs.getString("contact"), rs.getString("mail"), rs.getString("phone"), 
-                rs.getString("description"), rs.getString("needs")));
+                rs.getString("description"), rs.getString("needs"),rs.getString("image")));
 			}
 
 
@@ -104,7 +104,7 @@ public class ShelterService {
 			Shelter shelter = new Shelter(rs.getString("idshelter"), 
 			rs.getString("name"),  rs.getString("password"), rs.getString("city"), rs.getString("area"), rs.getString("address"), 
 			rs.getInt("postal_code"), rs.getString("contact"), rs.getString("mail"), 
-			rs.getString("phone"), rs.getString("description"), rs.getString("needs"));
+			rs.getString("phone"), rs.getString("description"), rs.getString("needs"), rs.getString("image"));
 			rs.close();
 			stmt.close();
 
