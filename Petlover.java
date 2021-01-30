@@ -9,14 +9,10 @@ public class Petlover {
     private String mail;
     private String phone;
     private String description;
-    private String fb;
-    private String twitter;
-    private String insta;
     private String image;
 
     public Petlover(String username, String password, String name, String surname, 
-    String city, String area, String mail, String phone, String description, 
-    String fb, String twitter, String insta, String image) {
+    String city, String area, String mail, String phone, String description,  String image) {
         this.username = username;
         this.password = password;
         this.name = name;
@@ -26,9 +22,6 @@ public class Petlover {
         this.mail = mail;
         this.phone = phone;
         this.description = description;
-        this.fb = fb;
-        this.twitter = twitter;
-        this.insta = insta;
         this.image = image;
         }
 
@@ -103,30 +96,6 @@ public class Petlover {
 
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    public String getFb() {
-        return fb;
-    }
-
-    public void setFb(String fb) {
-        this.fb = fb;
-    }
-
-    public String getTwitter() {
-        return twitter;
-    }
-
-    public void setTwitter(String twitter) {
-        this.twitter = twitter;
-    }
-
-    public String getInsta() {
-        return insta;
-    }
-
-    public void setInsta(String insta) {
-        this.insta = insta;
     }
 
     public String getImage() {

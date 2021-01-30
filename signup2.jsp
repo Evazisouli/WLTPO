@@ -42,16 +42,9 @@
                     
                     <h2 class="title">Εγγραφή ως Φιλοζωική Οργάνωση</h2>
   
-                    <form method="POST">
+                    <form action="registerController2.jsp" method="POST" class="form-horizontal">
                         <div class="input-group">
-                            <div class="rs-select2 js-select-simple select--no-search">
-                                <select name="gender">
-                                    <option disabled="disabled" selected="selected">Φύλο</option>
-                                    <option>Άνδρας</option>
-                                    <option>Γυναίκα</option>
-                                </select>
-                                <div class="select-dropdown"></div>
-                            </div>
+                            <input class="input--style-3" type="text" placeholder="Username Φιλοζωικής" name="idshelter">
                         </div>
                         <div class="input-group">
                             <input class="input--style-3" type="text" placeholder="Όνομα Φιλοζωικής" name="name">
@@ -63,19 +56,25 @@
                             <input class="input--style-3" type="password" placeholder="Επαλήθευση κωδικού" name="confirm">
                         </div>
                         <div class="input-group">
-                            <input class="input--style-3" type="email" placeholder="Διευθύνση email" name="mail">
-                        </div>
-                        <div class="input-group">
-                            <input class="input--style-3" type="text" placeholder="Τηλέφωνο" name="phone">
-                        </div>
-                        <div class="input-group">
                             <input class="input--style-3" type="text" placeholder="Πόλη" name="city">
                         </div>
                         <div class="input-group">
                             <input class="input--style-3" type="text" placeholder="Περιοχή" name="area">
                         </div>
                         <div class="input-group">
-                            <input class="input--style-3" type="text" placeholder="ΤΚ" name="TK">
+                            <input class="input--style-3" type="text" placeholder="Διεύθυνση" name="address">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="number" placeholder="ΤΚ" name="TK">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Υπεύθυνος Επικοινωνίας" name="contact">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="email" placeholder="Διευθύνση email" name="mail">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Τηλέφωνο" name="phone">
                         </div>
                         <div class="input-group">
                             <input class="input--style-3" type="text" placeholder="Bio" name="description">
@@ -83,8 +82,14 @@
                         <div class="input-group">
                             <input class="input--style-3" type="text" placeholder="Ανάγκες" name="needs">
                         </div>
-                        <div class="input-group">
-                            <input class="input--style-3" type="text" placeholder="Υπεύθυνος Επικοινωνίας" name="contact">
+                        <div class=selector>
+                            <label for="image">Επέλεξε ζώο:</label>
+                
+                            <select name="image" id="image">
+                              <option value="dog">Σκύλος</option>
+                              <option value="cat">Γάτα</option>
+                              <option value="bird">Πουλί</option>
+                            </select> 
                         </div>
                         <div class="p-t-10">
                             <button class="btn btn--pill btn--green" type="submit">Submit</button>
