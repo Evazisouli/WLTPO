@@ -86,9 +86,6 @@
                                         <p class="list-group-item-text"><i class="fas fa-at" style="color: #ff5405;"></i>
                                             <%=shelter.getMail()%>
                                         </p>
-                                        <p class="list-group-item-text"><i class="fab fa-facebook" style="color: #ff5405;"></i>
-                                            <%=shelter.getFb()%>
-                                        </p>
                                         <% id = id + 1; %>
 
                                     </div>
