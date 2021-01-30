@@ -18,6 +18,19 @@ String desc = request.getParameter("description");
 String needs = request.getParameter("needs");
 String image = request.getParameter("image");
 
+// convert from ISO-8859-1 (latin) to UTF-8 so as to support Greek characters
+name = new String(name.getBytes("ISO-8859-1"), "UTF-8");
+id = new String(id.getBytes("ISO-8859-1"), "UTF-8");
+password = new String(password.getBytes("ISO-8859-1"), "UTF-8");
+confirm = new String(confirm.getBytes("ISO-8859-1"), "UTF-8");
+city = new String(city.getBytes("ISO-8859-1"), "UTF-8");
+area = new String(area.getBytes("ISO-8859-1"), "UTF-8");
+phone = new String(phone.getBytes("ISO-8859-1"), "UTF-8");
+desc = new String(desc.getBytes("ISO-8859-1"), "UTF-8");
+address = new String(address.getBytes("ISO-8859-1"), "UTF-8");
+contact = new String(contact.getBytes("ISO-8859-1"), "UTF-8");
+needs = new String(needs.getBytes("ISO-8859-1"), "UTF-8");
+
 %>
 
 <!DOCTYPE html>
@@ -40,7 +53,7 @@ String image = request.getParameter("image");
 
 			<!-- Page Title -->
 			<% 
-			if(name.length() >= 5 && password.length() >= 5 && confirm.equals(password)) {
+			if(id.length() >=5 && name.length() >= 5 && password.length() >= 5 && confirm.equals(password)) {
                ShelterService shelter = new ShelterService();
                shelter.register(new Shelter(id, name, password, city, area, address, TK, contact, email, phone, desc, needs, image));
             
@@ -55,23 +68,25 @@ String image = request.getParameter("image");
 
 			<% } else {
 				%>
-				<div class="page-header">
-					<h1>Registration form has arrors</h1>
-				</div>
-				<div class="alert alert-danger" role="alert">
+				<h1>Παρουσιαστηκέ πρόβλημα κατα την εγγραφή σας!</h1>
+
+				
+				<div class="alert alert-warning" role="alert">
 					<ol class ="list-unstyled">
 						<ol>
                             <% if (name.length() < 5) { %>
 								<li><p>Το όνομα της Φιλοζωικης πρέπει να περιέχει τουλάχιστον 5 χαρακτήρες</p></li>
 							<% } if (password.length() <5) { %>
 								<li><p>Ο κωδικός πρέπει να περιέχει τουλάχιστον 5 χαρακτήρες</p></li>
+							<% } if (id.length() <5) { %>
+								<li><p>Το username σας πρέπει να περιέχει τουλάχιστον 5 χαρακτήρες</p></li>
 							<% } if(!confirm.equals(password)) { %>
                                 <li><p>Ο κωδικός δεν επαληθεύτηκε σωστά</p></li>
                                 <% } %>
 						</ol>
 					</ol>
 				</div>
-				<a href="http://ism.dmst.aueb.gr/ismgroup46/signup2.jsp" role="button" class="btn btn-info">
+				<a href="http://ism.dmst.aueb.gr/ismgroup46/signup2.jsp" role="button" class="btn btn-warning">
 					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Back to the form
 				</a>
 		

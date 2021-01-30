@@ -15,6 +15,19 @@ String phone = request.getParameter("phone");
 String desc = request.getParameter("description");
 String image = request.getParameter("image");
 
+// convert from ISO-8859-1 (latin) to UTF-8 so as to support Greek characters
+name = new String(name.getBytes("ISO-8859-1"), "UTF-8");
+surname = new String(surname.getBytes("ISO-8859-1"), "UTF-8");
+id = new String(id.getBytes("ISO-8859-1"), "UTF-8");
+password = new String(password.getBytes("ISO-8859-1"), "UTF-8");
+confirm = new String(confirm.getBytes("ISO-8859-1"), "UTF-8");
+city = new String(city.getBytes("ISO-8859-1"), "UTF-8");
+area = new String(area.getBytes("ISO-8859-1"), "UTF-8");
+phone = new String(phone.getBytes("ISO-8859-1"), "UTF-8");
+desc = new String(desc.getBytes("ISO-8859-1"), "UTF-8");
+
+
+
 %>
 
 <!DOCTYPE html>
@@ -52,10 +65,9 @@ String image = request.getParameter("image");
 
 			<% } else {
 				%>
-				<div class="page-header">
-					<h1>Registration form has arrors</h1>
-				</div>
-				<div class="alert alert-danger" role="alert">
+				<h1>Παρουσιαστηκέ πρόβλημα κατα την εγγραφή σας!</h1>
+
+				<div class="alert alert-warning" role="alert">
 					<ol class ="list-unstyled">
 						<ol>
 							<% if (name.length() < 5) { %>
@@ -72,7 +84,7 @@ String image = request.getParameter("image");
 						</ol>
 					</ol>
 				</div>
-				<a href="http://ism.dmst.aueb.gr/ismgroup46/signup1.jsp" role="button" class="btn btn-info">
+				<a href="http://ism.dmst.aueb.gr/ismgroup46/signup1.jsp" role="button" class="btn btn-warning">
 					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Back to the form
 				</a>
 		
