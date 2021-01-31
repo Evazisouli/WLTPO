@@ -20,6 +20,29 @@
 
 
                 <%@ include file="header.jsp" %>
+                <style>
+                    @media screen and (max-width: 1000px) {
+                        .column {
+                            width: 33.333%;
+                        }
+                
+                    }
+    
+                    @media screen and (max-width: 800px) {
+                        .column {
+                            width: 50%;
+                        }
+                       
+                    }
+    
+                    @media screen and (max-width: 600px) {
+                        .column {
+                            width: 100%;
+                        }
+                       
+                    }
+                  
+                </style>
 
             </head>
             <body>
@@ -30,6 +53,7 @@
                         <h1 class="large-font" style="color:orangered"><b>   Γνωρίστε τους πιο τρυφερούς μικρούς μας φίλους!</b></h1>
                         <p><span style="font-size:36px">   Όλοι σας μπορείτε να κάνετε μία αρχή υιοθετώντας ένα ζωάκι.</span> <br>   Ρίξτε μία ματιά στα ζωάκια που προσφέρονται για υιοθεσία και θα τα λατρέψετε.
                             <br>   Υποσχόμαστε πως θα σας κερδίσουν από τη πρώτη κιόλας γνωριμία.</p>
+                        <br> <button class="btn" id="btnfil" onclick="window.location.href='CreateAdoptionForm.jsp';"><i class="fa fa-plus"></i> Δημιουργία αιτήματος αγγελίας υιοθεσίας</button>
 
 
                         <div id='filter-container' class='filter__container'>
@@ -132,7 +156,7 @@
                             </div>
 
 
-                            <button id='filter-toggle'><span class="glyphicon glyphicon-filter" aria-hidden="true" style="color: black;"></span></button>
+                            <button id='filter-toggle'><span class="glyphicon glyphicon-filter" aria-hidden="true" style="color: white;"></span></button>
                         </div>
 
                         <div id='app-container'>
