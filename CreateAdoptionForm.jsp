@@ -96,6 +96,7 @@
                     <input class="input--style-3" type="text" placeholder="Συνυπάρχει με άλλα ζώα;" name="other_pets" required>
                 </div>
                 <h6>*Συμβόλαιο υιοθεσίας σύμφωνο με την υπάρχουσα νομοθεσία</h6>
+                <h6>ΠΡΟΣΟΧΗ: Το περιεχόμενο των απαντήσεων σας θα υποστεί επεξεργασία από το WLTPO και ενδεχομένως να χρησιμοποιήθει στην αγγελία σας. Βεβαιωθείτε οτι έχετε απαντήσει πλήρως και σωστά τις ερωτήσεις.</h6>
                         <div class="p-t-10">
                             <button class="btn btn--pill btn--green" type="submit">Submit</button>
                         </div>
@@ -114,7 +115,7 @@
 
     <!-- Main JS-->
     <script src="js/global.js"></script>
-
+    <%@ include file="footer.jsp" %>
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 
 </html>

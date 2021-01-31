@@ -71,8 +71,12 @@ other_pets = new String(other_pets.getBytes("ISO-8859-1"), "UTF-8");
             
             <h1 style="color:black; text-align: center; font-size:36px;"><b>Καταχωρήσατε επιτυχώς αίτημα για δημιουργία αγγελίας στο WLTPO!</b></h1>
 
-            <p style="color:black; text-align: center; font-size:20px;"><b>Για να διασφαλίσουμε την εύρυθμη λειτουργία των αγγελιών υιοθεσίας, πρέπει να επεξεργαστούμε το αίτημα σας πριν δημιοσιευτεί στο WLTPO! Μην ανησυχείτε, η ομάδα μας έχει αποθηκεύσει τα στοιχεία της αγγελίας σας και θα επικοινωνήσει μαζί σας σύντομα για περαιτέρω πληροφορίες.</b></a></p>
+            <p style="color:black; text-align: center; font-size:20px;"><b>Για να διασφαλίσουμε την εύρυθμη λειτουργία των αγγελιών υιοθεσίας, πρέπει να επεξεργαστούμε το αίτημα σας πριν δημιοσιευτεί στο WLTPO! Μην ανησυχείτε, η ομάδα μας έχει αποθηκεύσει τα στοιχεία της αγγελίας σας και θα επικοινωνήσει μαζί σας στην ηλεκτρονική διεύθυνση <%= email %> σύντομα για περαιτέρω πληροφορίες.</b></a></p>
             <p style="color:black; text-align: center; font-size:20px;"><b>Κωδικός αγγελίας: <%=id %></b></a></p>
+            <p style="color:black; text-align: center; font-size:20px;"><b>Όνομα ζώου: <%=name %></b></a></p>
+            <p style="color:black; text-align: center; font-size:20px;"><b>Η αγγελία αφορά: <%=kind %></b></a></p>
+
+
         
 				
             </div>

@@ -100,7 +100,7 @@
 
     <!-- Main JS-->
     <script src="js/global.js"></script>
-
+    <%@ include file="footer.jsp" %>
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 
 </html>

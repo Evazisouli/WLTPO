@@ -14,7 +14,11 @@
 <% if ((!(request.getRequestURI().replace(request.getContextPath() + "/", "").equals("loginpage.jsp"))) && 
 (!(request.getRequestURI().replace(request.getContextPath() + "/", "").equals("upload.jsp"))) &&
 (!(request.getRequestURI().replace(request.getContextPath() + "/", "").equals("signup.jsp"))) &&
-(!(request.getRequestURI().replace(request.getContextPath() + "/", "").equals("Confirmation.jsp")))) { %>
+(!(request.getRequestURI().replace(request.getContextPath() + "/", "").equals("Confirmation.jsp"))) &&
+(!(request.getRequestURI().replace(request.getContextPath() + "/", "").equals("signup1.jsp"))) &&
+(!(request.getRequestURI().replace(request.getContextPath() + "/", "").equals("signup2.jsp"))) &&
+(!(request.getRequestURI().replace(request.getContextPath() + "/", "").equals("CreateAdoptionForm.jsp"))) &&
+(!(request.getRequestURI().replace(request.getContextPath() + "/", "").equals("uploadController.jsp")))) { %>
  <footer class="site-footer">
   <div class="container1">
     <div class="row">
