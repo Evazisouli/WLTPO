@@ -205,7 +205,7 @@
    
    
    <div class="bt">
-           <button type="submit"><a style="color: white;" href="uploadController.jsp">Upload</a></button>
+           <button type="submit"><a style="color: white;" href="uploadController.jsp">Αποστολή</a></button>
      </div>
       
      <%@ include file="footer.jsp" %>
