@@ -25,8 +25,7 @@ public class PetloverService {
 
 			Petlover petlover = new Petlover(rs.getString("idpetlover"), rs.getString("password"), 
 			rs.getString("name"), rs.getString("surname"), rs.getString("city"), rs.getString("area"), 
-			rs.getString("mail"), rs.getString("phone"), rs.getString("description"), 
-			rs.getString("fb"), rs.getString("twitter"), rs.getString("insta"), rs.getString("image"));
+			rs.getString("mail"), rs.getString("phone"), rs.getString("description"));
 			rs.close();
 			stmt.close();
 
@@ -64,8 +63,7 @@ public class PetloverService {
 
             Petlover petlover = new Petlover(rs.getString("idpetlover"), rs.getString("password"), 
 			rs.getString("name"), rs.getString("surname"), rs.getString("city"), rs.getString("area"), 
-			rs.getString("mail"), rs.getString("phone"), rs.getString("description"), 
-			rs.getString("fb"), rs.getString("twitter"), rs.getString("insta"), rs.getString("image"));
+			rs.getString("mail"), rs.getString("phone"), rs.getString("description"));
 			rs.close();
 			stmt.close();
 			return petlover;
@@ -80,4 +78,60 @@ public class PetloverService {
 			}
 		}	
     }
-}
+
+	public void register(Petlover petlover) throws Exception {
+
+		DB db = new DB();
+        Connection con = null;
+        PreparedStatement stmt = null;
+		String checkSql = "SELECT * FROM petlover WHERE idpetlover = ?";
+        String sql = "INSERT INTO petlover(idpetlover, password, name, surname, city, area, mail, phone, description) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);";
+
+        try {
+            
+            con = db.getConnection();
+
+            stmt = con.prepareStatement(checkSql);
+            stmt.setString(1, petlover.getUsername());
+            ResultSet rs = stmt.executeQuery();
+ 
+            if (rs.next()) {
+                rs.close();
+                stmt.close();
+                throw new Exception("Username already registered");
+            }
+
+            rs.close();
+            
+            stmt = con.prepareStatement(sql);
+
+            stmt.setString(1, petlover.getUsername());
+			stmt.setString(2, petlover.getPassword());
+			 stmt.setString(3, petlover.getName());
+			  stmt.setString(4, petlover.getSurname());
+			   stmt.setString(5, petlover.getCity());
+			    stmt.setString(6, petlover.getArea());
+				 stmt.setString(7, petlover.getMail());
+				  stmt.setString(8, petlover.getPhone());
+				   stmt.setString(9, petlover.getDescription());
+
+            stmt.executeUpdate();
+            
+            stmt.close();
+
+        } catch (Exception e) {
+            throw new Exception(e.getMessage());
+        } finally {
+
+            try {
+                db.close();
+            } catch (Exception e) {
+                
+            }
+        }
+	}//end of register
+
+}//End of class
+
+
+

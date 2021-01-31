@@ -130,9 +130,9 @@
 
          <form action="/action_page.php">  
             <div class=selector>
-            <label for="cars">Επέλεξε ζώο</label>
+            <label for="kind">Επέλεξε ζώο</label>
 
-            <select name="cars" id="kind">
+            <select name="kind" id="kind">
               <option value="dog">Σκύλος</option>
               <option value="cat">Γάτα</option>
               <option value="bird">Πουλί</option>
@@ -205,7 +205,7 @@
    
    
    <div class="bt">
-           <button type="submit"><a style="color: white;" href="#">Upload</a></button>
+           <button type="submit"><a style="color: white;" href="uploadController.jsp">Upload</a></button>
      </div>
       
      <%@ include file="footer.jsp" %>

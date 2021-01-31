@@ -1,8 +1,9 @@
 package ismgroup46;
 
 public class Shelter {
-    private String idshelter;
+    private String username;
 	private String name;
+	private String password;
 	private String city;
 	private String area;
 	private String address;
@@ -13,16 +14,15 @@ public class Shelter {
 	private String description;
 	private String needs;
 	private String image;
-	private String fb;
-	private String twitter;
-    private String insta;
+
+
     
-	public Shelter(String idshelter, String name, String city, String area, String address, int postal_code,
-			String contact, String mail, String phone, String description, String needs, String image, String fb,
-			String twitter, String insta) {
+	public Shelter(String username, String name, String password, String city, String area, String address, int postal_code,
+			String contact, String mail, String phone, String description, String needs, String image) {
 		
-		this.idshelter = idshelter;
+		this.username = username;
 		this.name = name;
+		this.password = password;
 		this.city = city;
 		this.area = area;
 		this.address = address;
@@ -33,21 +33,27 @@ public class Shelter {
 		this.description = description;
 		this.needs = needs;
 		this.image = image;
-		this.fb = fb;
-		this.twitter = twitter;
-		this.insta = insta;
+
 	}
 	public String getUsername() {
-		return idshelter;
+		return username;
 	}
-	public void setUsername(String idshelter) {
-		this.idshelter = idshelter;
+
+	public void setUsername(String username) {
+		this.username = username;
 	}
+	
 	public String getName() {
 		return name;
 	}
 	public void setName(String name) {
 		this.name = name;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
 	}
 	public String getCity() {
 		return city;
@@ -103,30 +109,15 @@ public class Shelter {
 	public void setNeeds(String needs) {
 		this.needs = needs;
 	}
+
 	public String getImage() {
 		return image;
 	}
+
 	public void setImage(String image) {
 		this.image = image;
 	}
-	public String getFb() {
-		return fb;
-	}
-	public void setFb(String fb) {
-		this.fb = fb;
-	}
-	public String getTwitter() {
-		return twitter;
-	}
-	public void setTwitter(String twitter) {
-		this.twitter = twitter;
-	}
-	public String getInsta() {
-		return insta;
-	}
-	public void setInsta(String insta) {
-		this.insta = insta;
-	}
+
 	
 	
 }

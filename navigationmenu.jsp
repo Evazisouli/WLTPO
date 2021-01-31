@@ -10,8 +10,7 @@
     (!(request.getRequestURI().replace(request.getContextPath() + "/", "").equals("signup2.jsp"))) &&
     (!(request.getRequestURI().replace(request.getContextPath() + "/", "").equals("upload.jsp"))) &&
     (!(request.getRequestURI().replace(request.getContextPath() + "/", "").equals("Confirmation.jsp"))) &&
-    (!(request.getRequestURI().replace(request.getContextPath() + "/", "").equals("payment.jsp"))) &&
-    (!(request.getRequestURI().replace(request.getContextPath() + "/", "").equals("CreateAdoptionForm.jsp")))) { %>
+    (!(request.getRequestURI().replace(request.getContextPath() + "/", "").equals("payment.jsp")))) { %>
                 <a class="<%=request.getRequestURI().replace(request.getContextPath() + "/", "").equals("lostandfound.jsp") ? "active" : "" %>"href="lostandfound.jsp">Αναζητήσεις</a>
                 <a class="<%=request.getRequestURI().replace(request.getContextPath() + "/", "").equals("ChooseActionAdoption.jsp") ? "active" : "" %>"href="ChooseActionAdoption.jsp">Υιοθεσία</a>
                 <a class="<%=request.getRequestURI().replace(request.getContextPath() + "/", "").equals("donation.jsp") ? "active" : "" %>"href="donation.jsp">Δωρεές</a>

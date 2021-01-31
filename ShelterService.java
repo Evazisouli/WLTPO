@@ -23,11 +23,10 @@ public class ShelterService {
 				return null;
 			}
 
-            Shelter shelter = new Shelter(rs.getString("idshelter"), rs.getString("name"), rs.getString("city"), 
+            Shelter shelter = new Shelter(rs.getString("idshelter"), rs.getString("name"), rs.getString("password"), rs.getString("city"), 
             rs.getString("area"), rs.getString ("address"), rs.getInt("postal_code"),
             rs.getString("contact"), rs.getString("mail"), rs.getString("phone"), rs.getString("description"), 
-            rs.getString("needs"), rs.getString("image"), rs.getString("fb"),
-			rs.getString("twitter"), rs.getString("insta"));
+            rs.getString("needs"), rs.getString("image"));
 			rs.close();
 			stmt.close();
 			return shelter;
@@ -60,10 +59,9 @@ public class ShelterService {
 
 			while(rs.next()) {
 
-				shelters.add(new Shelter(rs.getString("idshelter"), rs.getString("name"), rs.getString("city"), rs.getString("area"), rs.getString("address"), 
+				shelters.add(new Shelter(rs.getString("idshelter"), rs.getString("name"), rs.getString("password"), rs.getString("city"), rs.getString("area"), rs.getString("address"), 
                 rs.getInt("postal_code"), rs.getString("contact"), rs.getString("mail"), rs.getString("phone"), 
-                rs.getString("description"), rs.getString("needs"), rs.getString("image"), 
-                rs.getString("fb"), rs.getString("twitter"), rs.getString("insta")));
+                rs.getString("description"), rs.getString("needs"),rs.getString("image")));
 			}
 
 
@@ -104,10 +102,9 @@ public class ShelterService {
 			}
 
 			Shelter shelter = new Shelter(rs.getString("idshelter"), 
-			rs.getString("name"), rs.getString("city"), rs.getString("area"), rs.getString("address"), 
+			rs.getString("name"),  rs.getString("password"), rs.getString("city"), rs.getString("area"), rs.getString("address"), 
 			rs.getInt("postal_code"), rs.getString("contact"), rs.getString("mail"), 
-			rs.getString("phone"), rs.getString("description"), rs.getString("needs"), rs.getString("image"), 
-			rs.getString("fb"), rs.getString("twitter"), rs.getString("insta"));
+			rs.getString("phone"), rs.getString("description"), rs.getString("needs"), rs.getString("image"));
 			rs.close();
 			stmt.close();
 
@@ -124,4 +121,61 @@ public class ShelterService {
 
 		}
 	 } //End of authenticate
-}
+	
+	public void register(Shelter shelter) throws Exception {
+
+		DB db = new DB();
+        Connection con = null;
+        PreparedStatement stmt = null;
+		String checkSql = "SELECT * FROM shelter WHERE idshelter = ?";
+        String sql = "INSERT INTO shelter(idshelter, name, password, city, area, address, postal_code, contact, mail, phone, description, needs, image) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
+
+        try {
+            
+            con = db.getConnection();
+
+            stmt = con.prepareStatement(checkSql);
+            stmt.setString(1, shelter.getUsername());
+            ResultSet rs = stmt.executeQuery();
+ 
+            if (rs.next()) {
+                rs.close();
+                stmt.close();
+                throw new Exception("Username already registered");
+            }
+
+            rs.close();
+            
+            stmt = con.prepareStatement(sql);
+
+            stmt.setString(1, shelter.getUsername());
+			stmt.setString(2, shelter.getName());
+			 stmt.setString(3, shelter.getPassword());
+			  stmt.setString(4, shelter.getCity());
+			   stmt.setString(5, shelter.getArea());
+			    stmt.setString(6, shelter.getAddress());
+				 stmt.setInt(7, shelter.getPostal_code());
+				  stmt.setString(8, shelter.getContact());
+				   stmt.setString(9, shelter.getMail());
+				   stmt.setString(10, shelter.getPhone());
+				   stmt.setString(11, shelter.getDescription());
+				   stmt.setString(12, shelter.getNeeds());
+				   stmt.setString(13, shelter.getImage());
+
+            stmt.executeUpdate();
+            
+            stmt.close();
+
+        } catch (Exception e) {
+            throw new Exception(e.getMessage());
+        } finally {
+
+            try {
+                db.close();
+            } catch (Exception e) {
+                
+            }
+        }
+	}//end of register
+
+}//End of class

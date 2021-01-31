@@ -1,4 +1,6 @@
 <%@ page language="java" contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,19 +44,15 @@
                     
                     <h2 class="title" color=white>Εγγραφή ως Φιλόζωος</h2>
         
-                    <form method="POST">
+                    <form action="registerController.jsp" method="POST" class="form-horizontal">
                         <div class="input-group">
-                            <div class="rs-select2 js-select-simple select--no-search">
-                                <select name="gender">
-                                    <option disabled="disabled" selected="selected">Φύλο</option>
-                                    <option>Άνδρας</option>
-                                    <option>Γυναίκα</option>
-                                </select>
-                                <div class="select-dropdown"></div>
-                            </div>
+                            <input class="input--style-3" type="text" placeholder="Username" name="idpetlover">
                         </div>
                         <div class="input-group">
-                            <input class="input--style-3" type="text" placeholder="Όνοματεπωνυμο" name="name">
+                            <input class="input--style-3" type="text" placeholder="Όνομα" name="name">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Επίθετο" name="surname">
                         </div>
                         <div class="input-group">
                             <input class="input--style-3" type="password" placeholder="Κωδικός" name="password">
@@ -63,16 +61,16 @@
                             <input class="input--style-3" type="password" placeholder="Επαλήθευση κωδικού" name="confirm">
                         </div>
                         <div class="input-group">
-                            <input class="input--style-3" type="email" placeholder="Διευθύνση email" name="mail">
-                        </div>
-                        <div class="input-group">
-                            <input class="input--style-3" type="text" placeholder="Τηλέφωνο" name="phone">
-                        </div>
-                        <div class="input-group">
                             <input class="input--style-3" type="text" placeholder="Πόλη" name="city">
                         </div>
                         <div class="input-group">
                             <input class="input--style-3" type="text" placeholder="Περιοχή" name="area">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="email" placeholder="Διευθύνση email" name="mail">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Τηλέφωνο" name="phone">
                         </div>
                         <div class="input-group">
                             <input class="input--style-3" type="text" placeholder="Bio" name="description">
