@@ -41,166 +41,86 @@
       <h1 style="color:black; text-align: center; font-size:36px;"><b>Ανάρτησε αγγελία ζώου προς υιοθεσία!</b></h1>
       <p style="color:white; text-align: center; font-size:20px;"><b>Αν επιθυμείς να προσφέρεις το κατοικίδιο σου για υιοθεσία, ανέρτησε την αγγελία και επέλεξε ένα από τα μέλη της φιλοζωικής κοινότητας του Who Let The Pets Out που θα δηλώσει ενδιαφέρον για να υιοθετήσει το ζωάκι σου! Αν ψάχνεις εσύ ζώο για υιοθεσία, δές τις αγγελίες <a style="color:black;" href="adoption.html"><b>εδω.</b></a></b></p>     
 
-      <p style="color:black; text-align: center; font-size:16px;"><b>Φύλο* (Υποχρεωτικό):</b></p>
-     
     
-      <form style="text-align: center;">
-        <input type="radio" id="male" name="gender" value="male">
-        <label style="color: black;" for="male">Αρσενικό</label><br>
-        <input style="color: violet;" type="radio" id="female" name="gender" value="Γυναίκα">
-        <label style="color: black;" for="female">Θηλυκό</label><br>
-      </form> 
 
-      <form action="/action_page.php">  
-        <div class=selector>
-        <label for="kind">Επέλεξε ζώο:</label>
-
-        <select name="kind" id="kind">
-          <option value="dog">Σκύλος</option>
-          <option value="cat">Γάτα</option>
-          <option value="bird">Πουλί</option>
-          <option value="erpeto">Ερπετό</option>
-        </select> 
-    </div>
-     
-    <form action="/action_page.php">  
-        <div class=selector>
-        <label for="size">Επέλεξε μέγεθος:</label>
-
-        <select name="size" id="size">
-          <option value="small">Μικρό (<15kg)</option>
-          <option value="medium">Μεσαίο (<25kg)</option>
-          <option value="large">Μεγάλο (>25kg)</option>
-        </select> 
-    </div>
-     
-         <form action="/action_page.php"> 
+      <form action="uploadController.jsp" method="POST">  
+        
             <div class="form-group">
-                <label style="color:black" for="email"><b>Όνομα κατοικίδιου* (Υποχρεωτικό):</b></label>
+              <label style="color:black" for="text"><b>Φύλο κατοικίδιου* (Υποχρεωτικό):</b></label>
+              <div class="lol">
+              <input type="name" placeholder="Αρσενικο/Θηλυκό" class="form-control" id="sex" name="sex" required>
+              </div>
+              <label style="color:black" for="text"><b>Ζώο* (Υποχρεωτικό):</b></label>
+              <div class="lol">
+              <input type="name" placeholder="Σκύλος/Γάτα" class="form-control" id="kind" required>
+              </div>
+                <label style="color:black" for="text"><b>Μέγεθος κατοικίδιου* (Μικρο<15kg) (Μεσαιο < 25kg) (Μεγαλο>25kg) </b> </label>
                 <div class="lol">
-                <input type="name" placeholder="Εισάγετε το όνομα του κατοικίδιου..." class="form-control" id="petname" required>
+                <input type="name" placeholder="Μικρό/Μεσαίο/Μεγάλο" class="form-control" id="petname" required>
                 </div>
                 <div class="form-group">
-                    <label style="color:black" for="email"><b>Ηλικία κατοικίδιου* (Υποχρεωτικό):</b></label>
+                    <label style="color:black" for="age"><b>Ηλικία κατοικίδιου* (Υποχρεωτικό):</b></label>
                     <div class="lol">
                     <input type="text" placeholder="Εισάγετε την ηλικία του κατοικίδιου..." class="form-control" id="age" required>
                     </div>
                   </div>
-              </div> 
-            <div class="form-group">
-                    <label style="color:black" for="email"><b>Πόλη* (Υποχρεωτικό):</b></label>
+                    <label style="color:black" for="city"><b>Πόλη* (Υποχρεωτικό):</b></label>
                     <div class="lol">
                     <input type="text" placeholder="Εισάγετε πόλη.." class="form-control" id="city" required>
                     </div>
-                  </div>
-                  <div class="form-group">
-                    <label style="color:black" for="email"><b>Περιοχή που βρίσκεσαι* (Υποχρεωτικό):</b></label>
+                    <label style="color:black" for="area"><b>Περιοχή που βρίσκεσαι* (Υποχρεωτικό):</b></label>
                     <div class="lol">
                     <input type="text" placeholder="Εισάγετε περιοχή.." class="form-control" id="area" required>
                     </div>
-                  </div>
-          </div>
-          </div>
-           <div class="form-group">
-             <label style="color:black" for="email"><b>Τηλέφωνο Επικοινωνίας* (Υποχρεωτικό):</b></label>
+          
+             <label style="color:black" for="phone"><b>Τηλέφωνο Επικοινωνίας* (Υποχρεωτικό):</b></label>
              <div class="lol">
              <input type="text" placeholder="Εισάγετε τηλέφωνο.."  class="form-control" id="phone" required>
              </div>
-           </div>
-           <div class="form-group">
-            <label style="color:black" for="email"><b>Περιγραφή* (Υποχρεωτική):</b></label>
+  
+    
+            <label style="color:black" for="email"><b>Email* (Υποχρεωτικό):</b></label>
+            <div class="lol">
+            <input type="text" placeholder="Εισάγετε email.."  class="form-control" id="email" required>
+          </div>
+            <label style="color:black" for="text"><b>Περιγραφή* (Υποχρεωτική):</b></label>
             <div class="lol">
             <input type="name" placeholder="Σύντομη περιγραφή..." class="form-control" id="description" required>
             </div>
-          </div>
-          <div class="form-group">
-            <label style="color:black" for="email"><b>Αριθμός Microchip:</b></label>
+            <label style="color:black" for="number"><b>Αριθμός Microchip:</b></label>
             <div class="lol">
             <input type="text" placeholder="Εισάγετε αριθμό Microchip.."  class="form-control" id="=microchipid" required>
             </div>
-        </div>
-
-          <form action="/action_page.php">  
-            <div class=selector>
-            <label style="color: white;" for="health_card">Βιβλιάριο Υγείας:</label>
-    
-            <select name="health_card" id="health_card">
-              <option value="yes">Ναι</option>
-              <option value="no">Όχι</option>
-            </select> 
-        </div>
-
-
-            <form action="/action_page.php">  
-                <div class=selector>
-                <label style="color: white;" for="health_probs">Μόνιμα Προβλήματα Υγείας:</label>
-        
-                <select name="health_probs" id="health_probs">
-                  <option value="yes">Ναι</option>
-                  <option value="no">Όχι</option>
-                </select> 
-            </div>
-     
-    
-        <form action="/action_page.php">  
-            <div class=selector>
-            <label style="color: white;" for="sterilisation">Στειρωμένο:</label>
-    
-            <select name="sterilisation" id="sterilisation">
-              <option value="yes">Ναι</option>
-              <option value="no">Όχι</option>
-            </select> 
-    </div>
-
-    <form action="/action_page.php">  
-        <div class=selector>
-        <label style="color: white;" style="color: white;" for="contract">Υποχρεωτικό Συμβόλαιο Υιοθεσίας:</label>
-
-        <select name="contract" id="contract">
-          <option value="yes">Ναι</option>
-          <option value="no">Όχι</option>
-        </select> 
-</div>
-
-<form action="/action_page.php">  
-    <div class=selector>
-    <label style="color: white;" for="kids">Κατάλληλος για συμβίωση με παιδιά:</label>
-
-    <select name="kids" id="kids">
-      <option value="yes">Ναι</option>
-      <option value="no">Όχι</option>
-    </select> 
-</div>
-
-<form action="/action_page.php">  
-    <div class=selector>
-    <label style="color: white;" for="other_pets">Κατάλληλος για συμβίωση με άλλα ζώα:</label>
-
-    <select name="other_pets" id="other_pets">
-      <option value="yes">Ναι</option>
-      <option value="no">Όχι</option>
-    </select> 
-</div>
-
-           </div>
-           </div>
-         </form>
-         <form action="/action_page.php">
-            <div class="form-group">
-            <label style="font-size:20px;" style="color:white" for="img">Επιλέξτε εικόνα* (Υποχρεωτικό):</label>
+            <label style="color:black" for="text"><b>Βιβλιάριο Υγείας:</b></label>
             <div class="lol">
-            <input type="file" id="img" name="img" accept="image/*" required>
-        </div>
+            <input type="text" placeholder="Έχει βιβλιάριο; (Ναι/Οχι)"  class="form-control" id="health_card" required>
             </div>
+            <label style="color:black" for="text"><b>Μόνιμα Προβλήματα Υγείας:</b></label>
+            <div class="lol">
+            <input type="text" placeholder="Έχει προβλήματα υγείας; (Ναι/Οχι)"  class="form-control" id="health_probs" required>
+            </div>
+            <label style="color:black" for="text"><b>Στειρωμένο:</b></label>
+            <div class="lol">
+            <input type="text" placeholder="Είναι στειρωμένο; (Ναι/Οχι)"  class="form-control" id="sterilisation" required>
+            </div>
+            <label style="color:black" for="text"><b>Υποχρεωτικό Συμβόλαιο Υιοθεσίας:</b></label>
+            <div class="lol">
+            <input type="text" placeholder="Υπάρχει συμβόλαιο; (Ναι/Οχι)"  class="form-control" id="contract" required>
+            </div>
+            <label style="color:black" for="text"><b>Κατάλληλος για συμβίωση με παιδιά:</b></label>
+            <div class="lol">
+            <input type="text" placeholder="Ναι/Οχι"  class="form-control" id="kids" required>
+            </div>
+            <label style="color:black" for="text"><b>Κατάλληλος για συμβίωση με άλλα ζώα:</b></label>
+            <div class="lol">
+            <input type="text" placeholder="Ναι/Οχι"  class="form-control" id="other_pets" required>
+            </div>
+</div>
           </form>
-          <div class="checkbox">
-            <label style="color: white; font-size:16px;"><input type="checkbox"><b>*Σύμφωνα με τον νέο Κανονισμό της Ε.Ε. 679/2016 (GDPR) για την Προστασία των Προσωπικών Δεδομένων, δέχεστε να μπορούμε να επικοινωνήσουμε μαζί σας βάσει των στοιχείων που εισήγατε στην φόρμα εγγραφής</b></label>
-          </div>
    
-   
-   <div class="bt">
-           <button type="submit" href="#"><a style="color: white;" href="#">Upload</a></button>
-     </div>
+          <div class="bt">
+            <button type="submit" href="#"><a style="color: white;" href="uploadController.jsp">Upload</a></button>
+      </div>
      
       
 

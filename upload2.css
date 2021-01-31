@@ -1,0 +1,84 @@
+
+
+  body {
+    background:url(../images/signup2.jpg); background-size:150%; background-repeat: no-repeat;
+  }
+ 
+  input[type=password], input[type="text"], input[type="name"], input[type="email"], input[type="number"], input[type="username"], input[type="address"] {
+    width: 30%;
+    padding: 16px 24px;
+    margin: 8px 0;
+    display: block;
+    box-sizing: border-box;
+  } 
+
+  .selector {
+    padding-left: 42%;
+    width:100%;
+    font-size:18px;
+    color: black;
+  }
+ 
+
+  .form-group {
+    text-align: center;
+    font-size:12px;
+    color:black;
+  }
+  
+  .selectors {
+    padding-left:0%;
+    font-size: 18px;
+  }
+  
+  .lol {
+    padding-left: 42%;
+  }
+  
+  .bt {
+    padding-left: 42%;
+  }
+  
+  button {
+    background-color:orangered;
+    color: white;
+    padding: 10px 16px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 30%;
+  }
+
+
+  button:hover {
+    color:white;
+  }
+  
+
+  span.psw {
+    float: center;
+    padding-top: 16px;
+    padding-right: 16px;
+  }
+  
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+  
+  @media screen and (max-width:1024px) {
+    .nav-links {
+      width: 150%;
+      display: flex;
+      justify-content: space-around;
+    }
+    body {
+      background:url(../images/signup.jpg);
+    }
+    
+  }

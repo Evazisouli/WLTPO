@@ -21,7 +21,7 @@ public class Upload {
     private String kids;
 	private String other_pets;
 	
-	public Upload(String uploadid, String sex, String kind, String size, String name, String age, String city, String area, String phone, String email, String description, String health_card, String health_probs, String sterilisation, String microchipid, String contract, String kids, String other_pets) {
+	public Upload(String uploadid, String sex, String kind, String size, String name, String age, String city, String area, String phone, String email, String description, String microchipid,  String health_card, String health_probs, String sterilisation, String contract, String kids, String other_pets) {
 		
         this.uploadid =  uploadid;
         this.sex = sex;
