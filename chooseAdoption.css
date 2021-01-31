@@ -16,7 +16,7 @@
 
 #filter-toggle:hover {
     cursor: pointer;
-    background-color: rgb(230, 106, 58);
+    background-color: rgb(255, 0, 0);
 
 }
 
@@ -201,6 +201,12 @@ h2 {
     }
 }
 
+@media (max-width: 600px) {
+    .column {
+      width: 50%;
+    }
+  }
+
 .row {
     padding-top: 10px;
     margin-left: 0px;
@@ -320,3 +326,43 @@ form.example::after {
     clear: both;
     display: table;
 }
+#btndon {
+                            background-color: #ff5405;
+                            color: white;
+                            font-size: 16px;
+                            padding: 16px 32px;
+                            border-radius: 16px;
+                        }
+                        
+                        #btnfil {
+                            background-color: #ff5405;
+                            color: white;
+                            font-size: 16px;
+                            padding: 8px 16px;
+                            border-radius: 16px;
+                        }
+                        
+                        #btnfil:hover {
+                            background-color: whitesmoke;
+                            color: orangered;
+                            border-radius: 16px;
+                        }
+                        
+                        .dropbtn {
+                            background-color: #ff5405;
+                            color: white;
+                            padding: 12px;
+                            font-size: 12px;
+                            border-radius: 16px;
+                            cursor: pointer;
+                        }
+                        
+                        .dropbtn:hover {
+                            background-color: whitesmoke;
+                            color: orangered;
+                            border-radius: 16px;
+                        }
+
+
+  
+  
