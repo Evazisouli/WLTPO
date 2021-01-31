@@ -128,7 +128,7 @@ public class ShelterService {
         Connection con = null;
         PreparedStatement stmt = null;
 		String checkSql = "SELECT * FROM shelter WHERE idshelter = ?";
-        String sql = "INSERT INTO shelter(idshelter, name, password, city, area, address, postal_code, contact, mail, phone, description, needs) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
+        String sql = "INSERT INTO shelter(idshelter, name, password, city, area, address, postal_code, contact, mail, phone, description, needs, image) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
 
         try {
             
@@ -160,6 +160,7 @@ public class ShelterService {
 				   stmt.setString(10, shelter.getPhone());
 				   stmt.setString(11, shelter.getDescription());
 				   stmt.setString(12, shelter.getNeeds());
+				   stmt.setString(13, shelter.getImage());
 
             stmt.executeUpdate();
             

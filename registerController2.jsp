@@ -16,7 +16,7 @@ String email = request.getParameter("mail");
 String phone = request.getParameter("phone");
 String desc = request.getParameter("description");
 String needs = request.getParameter("needs");
-String image = request.getParameter("image");
+String image=request.getParameter("name");
 
 // convert from ISO-8859-1 (latin) to UTF-8 so as to support Greek characters
 name = new String(name.getBytes("ISO-8859-1"), "UTF-8");

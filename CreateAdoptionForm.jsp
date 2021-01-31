@@ -48,7 +48,7 @@
             <div class="form-group">
               <label style="color:black" for="text"><b>Φύλο κατοικίδιου* (Υποχρεωτικό):</b></label>
               <div class="lol">
-              <input type="name" placeholder="Αρσενικο/Θηλυκό" class="form-control" id="sex" name="sex" required>
+              <input type="name" placeholder="Αρσενικο/Θηλυκό" class="form-control" name="sex">
               </div>
               <label style="color:black" for="text"><b>Ζώο* (Υποχρεωτικό):</b></label>
               <div class="lol">

@@ -82,15 +82,6 @@
                         <div class="input-group">
                             <input class="input--style-3" type="text" placeholder="Ανάγκες" name="needs">
                         </div>
-                        <div class=selector>
-                            <label for="image">Επέλεξε ζώο:</label>
-                
-                            <select name="image" id="image">
-                              <option value="dog">Σκύλος</option>
-                              <option value="cat">Γάτα</option>
-                              <option value="bird">Πουλί</option>
-                            </select> 
-                        </div>
                         <div class="p-t-10">
                             <button class="btn btn--pill btn--green" type="submit">Submit</button>
                         </div>

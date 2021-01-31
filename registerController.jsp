@@ -13,7 +13,6 @@ String area = request.getParameter("area");
 String email = request.getParameter("mail");
 String phone = request.getParameter("phone");
 String desc = request.getParameter("description");
-String image = request.getParameter("image");
 
 // convert from ISO-8859-1 (latin) to UTF-8 so as to support Greek characters
 name = new String(name.getBytes("ISO-8859-1"), "UTF-8");
@@ -52,7 +51,7 @@ desc = new String(desc.getBytes("ISO-8859-1"), "UTF-8");
 			<% 
 			if(name.length() >= 5 && surname.length() >= 5 && id.length() >= 5 && password.length() >= 5 && confirm.equals(password)) {
                PetloverService lover = new PetloverService();
-               lover.register(new Petlover(id, password, name, surname, city, area, email, phone, desc, image));
+               lover.register(new Petlover(id, password, name, surname, city, area, email, phone, desc));
             
             %>
             
