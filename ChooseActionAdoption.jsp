@@ -14,24 +14,35 @@
             <head>
                 <title>Υιοθεσία ζώου</title>
 
-                <link href="css/homepage.css" rel="stylesheet">
+                
                 <link href="css/chooseAdoption.css" rel="stylesheet">
+                <link href="css/homepage.css" rel="stylesheet">
 		<link href="css/footer.css" rel="stylesheet">
 
 
                 <%@ include file="header.jsp" %>
                 <style>
-                    @media screen and (max-width: 1000px) {
+                    @media screen and (max-width: 1600px)and (min-width: 993px) {
+                        .card-text {
+                            width: 25%;
+                        }
+                
+                    }
+                    @media screen and (max-width: 992px) and (min-width: 769px) {
                         .column {
+                            width: 33.333%;
+                        }
+                        .card-text {
                             width: 33.333%;
                         }
                 
                     }
     
-                    @media screen and (max-width: 800px) {
+                    @media screen and (max-width: 768px) and (min-width: 601px) {
                         .column {
                             width: 50%;
                         }
+                       
                        
                     }
     
@@ -41,7 +52,6 @@
                         }
                        
                     }
-                  
                 </style>
 
             </head>
