@@ -34,6 +34,7 @@ public class Upload {
         this.phone = phone;
         this.email = email;
         this.description = description;
+		this.microchipid = microchipid;
         this.health_card = health_card;
         this.health_probs = health_probs;
         this.sterilisation = sterilisation;

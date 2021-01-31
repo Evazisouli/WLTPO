@@ -7,7 +7,7 @@ public void register(Upload upload) throws Exception {
 		DB db = new DB();
         Connection con = null;
         PreparedStatement stmt = null;
-        String sql = "INSERT INTO Upload(UploadID, sex, kind, size, name, age, city, area, phone, email, description, microchipid, health_card, health_probs, sterilisation, contract, kids, other_pets) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
+        String sql = "INSERT INTO upload(UploadID, sex, kind, size, name, age, city, area, phone, email, description, microchipid, health_card, health_probs, sterilisation, contract, kids, other_pets) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);";
 
         try {
             
