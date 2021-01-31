@@ -1,129 +1,120 @@
 <%@ page language="java" contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <title>Ανάρτηση Υιοθεσίας</title>
-    <%@ include file="header.jsp" %>
-    <link href="css/upload2.css" rel="stylesheet">
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>Eγγραφή</title>
+
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
     <link href="css/homepage.css" rel="stylesheet">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <style>
-      * {
-          box-sizing: border-box
-      }
-
-
-
-      body {
-          margin: 0;
-          font-family: Arial, Helvetica, sans-serif;
-          color: white;
-      }
-
-      .containers {
-            padding: 20px;
-        }
-
-        .contain {
-            padding: 20px;
-        }
-
-</style>
-
+    <link href="css/signup2.css" rel="stylesheet">
 </head>
+
+
 <body>
-  <%@ include file="navigationmenu.jsp" %>
 
-
-
-      <h1 style="color:black; text-align: center; font-size:36px;"><b>Ανάρτησε αγγελία ζώου προς υιοθεσία!</b></h1>
-      <p style="color:white; text-align: center; font-size:20px;"><b>Αν επιθυμείς να προσφέρεις το κατοικίδιο σου για υιοθεσία, ανέρτησε την αγγελία και επέλεξε ένα από τα μέλη της φιλοζωικής κοινότητας του Who Let The Pets Out που θα δηλώσει ενδιαφέρον για να υιοθετήσει το ζωάκι σου! Αν ψάχνεις εσύ ζώο για υιοθεσία, δές τις αγγελίες <a style="color:black;" href="adoption.html"><b>εδω.</b></a></b></p>     
-
-    
-
-      <form action="uploadController.jsp" method="POST">  
-        
-            <div class="form-group">
-              <label style="color:black" for="text"><b>Φύλο κατοικίδιου* (Υποχρεωτικό):</b></label>
-              <div class="lol">
-              <input type="name" placeholder="Αρσενικο/Θηλυκό" class="form-control" name="sex">
-              </div>
-              <label style="color:black" for="text"><b>Ζώο* (Υποχρεωτικό):</b></label>
-              <div class="lol">
-              <input type="name" placeholder="Σκύλος/Γάτα" class="form-control" id="kind" required>
-              </div>
-                <label style="color:black" for="text"><b>Μέγεθος κατοικίδιου* (Μικρο<15kg) (Μεσαιο < 25kg) (Μεγαλο>25kg) </b> </label>
-                <div class="lol">
-                <input type="name" placeholder="Μικρό/Μεσαίο/Μεγάλο" class="form-control" id="petname" required>
-                </div>
-                <div class="form-group">
-                    <label style="color:black" for="age"><b>Ηλικία κατοικίδιου* (Υποχρεωτικό):</b></label>
-                    <div class="lol">
-                    <input type="text" placeholder="Εισάγετε την ηλικία του κατοικίδιου..." class="form-control" id="age" required>
-                    </div>
-                  </div>
-                    <label style="color:black" for="city"><b>Πόλη* (Υποχρεωτικό):</b></label>
-                    <div class="lol">
-                    <input type="text" placeholder="Εισάγετε πόλη.." class="form-control" id="city" required>
-                    </div>
-                    <label style="color:black" for="area"><b>Περιοχή που βρίσκεσαι* (Υποχρεωτικό):</b></label>
-                    <div class="lol">
-                    <input type="text" placeholder="Εισάγετε περιοχή.." class="form-control" id="area" required>
-                    </div>
-          
-             <label style="color:black" for="phone"><b>Τηλέφωνο Επικοινωνίας* (Υποχρεωτικό):</b></label>
-             <div class="lol">
-             <input type="text" placeholder="Εισάγετε τηλέφωνο.."  class="form-control" id="phone" required>
-             </div>
+    <%@ include file="navigationmenu.jsp" %>
+              
+    <div class="page-wrapper bg-gra-01 p-t-180 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w780">
+            <div class="card card-3">
+                <div class="card-heading"></div>
+                <div class="card-body">
+                    
+                    <h2 class="title">Δημιουργία υιοθεσίας</h2>
   
-    
-            <label style="color:black" for="email"><b>Email* (Υποχρεωτικό):</b></label>
-            <div class="lol">
-            <input type="text" placeholder="Εισάγετε email.."  class="form-control" id="email" required>
-          </div>
-            <label style="color:black" for="text"><b>Περιγραφή* (Υποχρεωτική):</b></label>
-            <div class="lol">
-            <input type="name" placeholder="Σύντομη περιγραφή..." class="form-control" id="description" required>
+                    <form action="uploadController.jsp" method="POST" class="form-horizontal">
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Φύλο κατοικιδίου" name="sex" required>
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Ζώο (Σκύλος/Γάτα)" name="kind" required>
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Βάρος (σε kg)" name="size" required>
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Όνομα κατοικιδίου" name="name" required>
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Ηλικία κατοικιδίου" name="age" required>
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Πόλη" name="city" required>
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Περιοχή" name="area">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Τηλέφωνο" name="phone" required>
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="email" placeholder="Email" name="email" required>
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Περιγραφή" name="description">
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Αριθμός microchip" name="microchipid">
+                        </div>
+                        <h3>Απαντήστε ναι ή όχι:</h3>
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Έχει βιβλιάριο υγείας;" name="health_card" required>
+                        </div>
+                        <div class="input-group">
+                            <input class="input--style-3" type="text" placeholder="Έχει προβλήματα υγείας;" name="health_probs" required>
+                        </div>
+                        <div class="input-group">
+                          <input class="input--style-3" type="text" placeholder="Είναι στειρωμένο;" name="sterilisation" required>
+                      </div>
+                      <div class="input-group">
+                        <input class="input--style-3" type="text" placeholder="Υπάρχει συμβόλαιο*;" name="contract" required>
+                    </div>
+                    <div class="input-group">
+                      <input class="input--style-3" type="text" placeholder="Συνυπάρχει με παιδιά;" name="kids" required>
+                  </div>
+                  <div class="input-group">
+                    <input class="input--style-3" type="text" placeholder="Συνυπάρχει με άλλα ζώα;" name="other_pets" required>
+                </div>
+                <h6>*Συμβόλαιο υιοθεσίας σύμφωνο με την υπάρχουσα νομοθεσία</h6>
+                        <div class="p-t-10">
+                            <button class="btn btn--pill btn--green" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <label style="color:black" for="number"><b>Αριθμός Microchip:</b></label>
-            <div class="lol">
-            <input type="text" placeholder="Εισάγετε αριθμό Microchip.."  class="form-control" id="=microchipid" required>
-            </div>
-            <label style="color:black" for="text"><b>Βιβλιάριο Υγείας:</b></label>
-            <div class="lol">
-            <input type="text" placeholder="Έχει βιβλιάριο; (Ναι/Οχι)"  class="form-control" id="health_card" required>
-            </div>
-            <label style="color:black" for="text"><b>Μόνιμα Προβλήματα Υγείας:</b></label>
-            <div class="lol">
-            <input type="text" placeholder="Έχει προβλήματα υγείας; (Ναι/Οχι)"  class="form-control" id="health_probs" required>
-            </div>
-            <label style="color:black" for="text"><b>Στειρωμένο:</b></label>
-            <div class="lol">
-            <input type="text" placeholder="Είναι στειρωμένο; (Ναι/Οχι)"  class="form-control" id="sterilisation" required>
-            </div>
-            <label style="color:black" for="text"><b>Υποχρεωτικό Συμβόλαιο Υιοθεσίας:</b></label>
-            <div class="lol">
-            <input type="text" placeholder="Υπάρχει συμβόλαιο; (Ναι/Οχι)"  class="form-control" id="contract" required>
-            </div>
-            <label style="color:black" for="text"><b>Κατάλληλος για συμβίωση με παιδιά:</b></label>
-            <div class="lol">
-            <input type="text" placeholder="Ναι/Οχι"  class="form-control" id="kids" required>
-            </div>
-            <label style="color:black" for="text"><b>Κατάλληλος για συμβίωση με άλλα ζώα:</b></label>
-            <div class="lol">
-            <input type="text" placeholder="Ναι/Οχι"  class="form-control" id="other_pets" required>
-            </div>
-</div>
-          </form>
-   
-          <div class="bt">
-            <button type="submit" href="#"><a style="color: white;" href="uploadController.jsp">Upload</a></button>
-      </div>
-     
-      
+        </div>
+    </div>
 
-</body>
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 
 </html>

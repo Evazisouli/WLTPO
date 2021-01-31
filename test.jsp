@@ -120,7 +120,7 @@
    
    
    <div class="bt">
-           <button type="submit"><a style="color: white;" href="uploadController.jsp">Upload</a></button>
+           <button type="submit"><a style="color: white;" href="">Upload</a></button>
      </div>
       
 

@@ -5,7 +5,8 @@
   }
  
   input[type=password], input[type="text"], input[type="name"], input[type="email"], input[type="number"], input[type="username"], input[type="address"] {
-    width: 30%;
+    width: 50%;
+    padding-left: 50%;
     padding: 16px 24px;
     margin: 8px 0;
     display: block;
@@ -31,6 +32,10 @@
     font-size: 18px;
   }
   
+
+.input-group {
+  padding-left: 50%;
+}
   .lol {
     padding-left: 42%;
   }

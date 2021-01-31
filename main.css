@@ -1,7 +1,7 @@
 
 
 input[type="text"] {
-  width:45%;
+  width:50%;
 }
 
 
@@ -152,6 +152,7 @@ h2 {
 
 h3 {
   font-size: 24px;
+  margin-bottom: 50px;
 }
 
 h4 {
