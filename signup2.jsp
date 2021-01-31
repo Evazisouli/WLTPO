@@ -83,7 +83,7 @@
                             <input class="input--style-3" type="text" placeholder="Ανάγκες" name="needs">
                         </div>
                         <div class="p-t-10">
-                            <button class="btn btn--pill btn--green" type="submit">Submit</button>
+                            <button class="btn btn--pill btn--green" type="submit">Αποστολή</button>
                         </div>
                     </form>
                 </div>
