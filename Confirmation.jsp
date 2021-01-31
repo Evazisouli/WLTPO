@@ -12,6 +12,7 @@ if ((session.getAttribute("buttonadoption") == "no") && (session.getAttribute("p
 	<jsp:forward page = "ChooseActionAdoption.jsp"/>
 	<%
 } 
+    
 
     session.setAttribute("request", "yes");
     String sid = (String)session.getAttribute("id");

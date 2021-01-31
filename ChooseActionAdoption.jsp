@@ -21,17 +21,27 @@
 
                 <%@ include file="header.jsp" %>
                 <style>
-                    @media screen and (max-width: 1000px) {
+                     @media screen and (max-width: 1600px)and (min-width: 993px) {
+                        .card-text {
+                            width: 25%;
+                        }
+                
+                    }
+                    @media screen and (max-width: 992px) and (min-width: 769px) {
                         .column {
+                            width: 33.333%;
+                        }
+                        .card-text {
                             width: 33.333%;
                         }
                 
                     }
     
-                    @media screen and (max-width: 800px) {
+                    @media screen and (max-width: 768px) and (min-width: 601px) {
                         .column {
                             width: 50%;
                         }
+                       
                        
                     }
     
@@ -53,7 +63,7 @@
                         <h1 class="large-font" style="color:orangered"><b>   Γνωρίστε τους πιο τρυφερούς μικρούς μας φίλους!</b></h1>
                         <p><span style="font-size:36px">   Όλοι σας μπορείτε να κάνετε μία αρχή υιοθετώντας ένα ζωάκι.</span> <br>   Ρίξτε μία ματιά στα ζωάκια που προσφέρονται για υιοθεσία και θα τα λατρέψετε.
                             <br>   Υποσχόμαστε πως θα σας κερδίσουν από τη πρώτη κιόλας γνωριμία.</p>
-                        <br> <button class="btn" id="btnfil" onclick="window.location.href='CreateAdoptionForm.jsp';"><i class="fa fa-plus"></i> Δημιουργία αιτήματος αγγελίας υιοθεσίας</button>
+                            <br> <button class="btn" id="btnfil" onclick="window.location.href='CreateAdoptionForm.jsp';"><i class="fa fa-plus"></i> Δημιουργία αιτήματος αγγελίας υιοθεσίας</button>
 
 
                         <div id='filter-container' class='filter__container'>
@@ -169,7 +179,7 @@
 
                                     <% 	int id = 1;
             for(Pet zwo: animal) { %>
-
+                                    
                                         <div class="column">
                                             <div class="card" data-gender='<%=zwo.getSex() %>' data-size='<%=zwo.getSize() %>' data-age='a<%=zwo.getAge() %>' data-animal='<%=zwo.getKind() %>'>
                                                 <img src="images/<%=zwo.getImage()%>.jpg" alt="Pet">
@@ -180,7 +190,8 @@
                                                     <p class="title">
                                                         <%=zwo.getSex() %>
                                                     </p>
-                                                    <p style="color: black;"> Πολύ φιλικός και παιχνιδιάρης, ιδανικός για περιβάλλον με παιδιά.</p>
+                                                    <p class="card-text" style="color: black;"> Πολύ φιλικός και παιχνιδιάρης, 
+                                                        ιδανικός για περιβάλλον με παιδιά.</p>
                                                     <p style="color: black;">
                                                         <%=zwo.getAge() %> χρονών</p>
 
