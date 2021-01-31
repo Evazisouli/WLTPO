@@ -17,6 +17,10 @@
       * {
           box-sizing: border-box
       }
+      .alert {
+   width:55%; margin-left: 0%;
+}
+
 
       body {
           margin: 0;
@@ -32,9 +36,18 @@
       <h1 style="color:black; text-align: center; font-size:36px;"><b>Σύνδεση</b></h1>
       <p style="color:black; text-align: center; font-size:20px;"><b>Αν δεν έχετε λογαριασμό Who Let The Dogs Out </b><a style="color:white;" href="http://ism.dmst.aueb.gr/ismgroup46/signup.jsp"><b>εγγραφείτε εδω.</b></a></p>
 
-      
+
     <form method="post" action="<%=request.getContextPath() %>/loginController.jsp">
         <div style="align-items:center;" class="container">
+          <%
+          if(request.getAttribute("message") != null){ %>
+            <div class="row">
+              <div class="span12">
+            <div class="alert alert-warning" role="alert"><%=(String)request.getAttribute("message")%>
+            </div>
+          </div>
+          </div>
+          <% } %>
           <label style="color: black; align-items: center;" for="uname"><b>Username</b></label>
           <input type="text" placeholder="Enter Username" name="username" required>
       

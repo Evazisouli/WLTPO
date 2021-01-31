@@ -11,7 +11,7 @@ if (petlov.authenticate(usern, passw) != null){
     Petlover petlover = petlov.authenticate(usern, passw);
     session.setAttribute("object", petlover);
     if (session.getAttribute("buttonadoption") == "yes") { %>
-            session.setAttribute("buttonadoption") == "no");
+            session.setAttribute("buttonadoption","no");
             <jsp:forward page="Confirmation.jsp" />
             <% } else { %>
 
@@ -24,9 +24,15 @@ if (petlov.authenticate(usern, passw) != null){
                     <jsp:forward page="homepage.jsp" />
                     <%
 } else{
+    if (session.getAttribute("object") != null) { %>
+        <jsp:forward page="ChooseActionAdoption.jsp" />
+    <% } else {
+
     
+        request.setAttribute("message", "Wrong username or password");
 %>
-                        <jsp:forward page="loginpage.jsp" />
+        <jsp:forward page="loginpage.jsp" />
                         <%
+    }
 }
 %>
