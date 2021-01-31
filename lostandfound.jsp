@@ -22,7 +22,39 @@ List<Lostpet> lostpets = lostpetService.showLostpets();
                     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
 
-
+                    <style>
+                        @media screen and (max-width: 1600px)and (min-width: 993px) {
+                           .card-text {
+                               width: 50%;
+                           }
+                   
+                       }
+                       @media screen and (max-width: 992px) and (min-width: 769px) {
+                           .column {
+                               width: 50%;
+                           }
+                           .card-text {
+                               width: 50%;
+                           }
+                   
+                       }
+       
+                       @media screen and (max-width: 768px) and (min-width: 601px) {
+                           .column {
+                               width: 50%;
+                           }
+                          
+                          
+                       }
+       
+                       @media screen and (max-width: 600px) {
+                           .column {
+                               width: 100%;
+                           }
+                          
+                       }
+                     
+                   </style>
 
             </head>
 
@@ -36,7 +68,7 @@ List<Lostpet> lostpets = lostpetService.showLostpets();
                             <br> Εδώ μπορείτε να αναζητήσετε και να αναρτήσετε χαμένα κατοικίδια.
                         </p>
 
-                        <div class="ro" style="margin-top: 1%;">
+                        <div class="row" style="margin-top: 1%;">
                             <div class="col-6">
                                 <form class="example" style="max-width:300px; margin-top: 2%;">
                                     <input type="text" id="myFilter" placeholder="Αναζήτηση Κατοικιδίου.." onkeyup="myFunction()" name="search2">
@@ -63,9 +95,9 @@ List<Lostpet> lostpets = lostpetService.showLostpets();
                     for (Lostpet lostp: lostpets){
                     %>
                                     <div class="column">
-                                        <div class="card" style="width:400px">
+                                        <div class="card" >
 
-                                            <img class="card-img-top" src="images/<%=lostp.getImage()%>.png" alt="Card image" style="width:100%">
+                                            <img class="card-img-top" src="images/<%=lostp.getImage()%>.png" alt="Card image" style="width:92%; height: 63%;">
                                             <div class="card-body">
                                                 <h2 class="card-title" style="color: #ff5405;"><span style="font-size:24px"><strong><%=lostp.getName()%></strong></span></h2>
                                                 <p class="card-text">

@@ -1,12 +1,12 @@
                         /* Make the image fully responsive */
                         
                         .carousel-inner img {
-                            width: 100%;
+                            width: 75%;
                             height: 100%;
                         }
 
                         .card{
-                            height:700px;
+                            height:1000px;
                         }
                         
                         body {
@@ -21,6 +21,7 @@
                         
                         h3 {
                             text-align: center;
+                            
                         }
                         
                         #imagecont {
@@ -169,13 +170,17 @@
                             display: table;
                         }
                         
-                        .ro {
+                        .row {
                             margin-left: 1px;
+                            margin-left: 0px;
+                            margin-right: 0px;
                         }
+
+                       
                         
                         .column {
                             float: left;
-                            width: 50%;
+                            width: 25%;
                             margin-bottom: 16px;
                             padding-left: 8px;
                             padding-right: 4px;
